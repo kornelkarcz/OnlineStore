@@ -8,6 +8,8 @@ import javax.validation.constraints.Digits;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import java.math.BigDecimal;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Table(name = "products", uniqueConstraints = @UniqueConstraint(columnNames = "eanNumber"))
@@ -34,11 +36,14 @@ public class Product {
 
     @NotBlank
     @EAN
-    private  String eanNumber;
+    private String eanNumber;
 
     @ManyToOne
     @JoinColumn(name = "category_id")
     private Category category;
+
+    @ManyToMany(mappedBy = "productList", cascade = {CascadeType.MERGE, CascadeType.PERSIST})
+    private List<Order> orderList = new ArrayList<>();
 
     public Product() {
     }
