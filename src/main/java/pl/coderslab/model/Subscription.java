@@ -5,6 +5,8 @@ import javax.validation.constraints.Digits;
 import javax.validation.constraints.NotNull;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Table(name = "subscriptions")
@@ -25,6 +27,12 @@ public class Subscription {
     private LocalDateTime startDate;
 
     private LocalDateTime endDate;
+
+    @ManyToMany(cascade = {CascadeType.PERSIST, CascadeType.MERGE})
+    @JoinTable(name = "productsforlease_subscriptions",
+            joinColumns = {@JoinColumn(name = "subscription_id")},
+            inverseJoinColumns = {@JoinColumn(name = "productsforlease_id")})
+    private List<LeaseProduct> leaseProductList = new ArrayList<>();
 
     public Subscription() {
     }

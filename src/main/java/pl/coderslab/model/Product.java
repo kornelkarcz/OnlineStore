@@ -42,7 +42,7 @@ public class Product {
     @ManyToOne
     @JoinColumn(name = "category_id")
     private Category category;
-    
+
     @ManyToMany(mappedBy = "productList", cascade = {CascadeType.MERGE, CascadeType.PERSIST})
     private List<Order> orderList = new ArrayList<>();
 

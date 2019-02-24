@@ -8,6 +8,8 @@ import javax.validation.constraints.Digits;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import java.math.BigDecimal;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Table(name = "lease_products")
@@ -41,7 +43,8 @@ public class LeaseProduct {
     @JoinColumn(name = "category_id")
     private Category category;
 
-
+    @ManyToMany(mappedBy = "leaseProductList", cascade = {CascadeType.MERGE, CascadeType.PERSIST})
+    private List<Subscription> subscriptionList = new ArrayList<>();
 
     public LeaseProduct() {
     }
