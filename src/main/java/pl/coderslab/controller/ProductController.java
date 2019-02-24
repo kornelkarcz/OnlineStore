@@ -3,14 +3,12 @@ package pl.coderslab.controller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
-import pl.coderslab.service.UserService;
+import pl.coderslab.service.ProductService;
 
 @Controller
-@RequestMapping("/user")
-public class UserController {
+@RequestMapping("/product")
+public class ProductController {
 
     @Autowired
-    private UserService userService;
-
-
+    private ProductService productService;
 }
