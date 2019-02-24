@@ -9,6 +9,8 @@ import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 @Entity
 @Table(name = "addresses")
@@ -40,8 +42,10 @@ public class Address {
     @Size(min = 3, max = 50)
     private String country;
 
-    @ManyToMany(mappedBy = "addressList")
-    List<User> userList = new ArrayList<>();
+
+    @OneToMany(mappedBy = "address")
+    private List<UserAddress> employees;
+
 
     public Address() {
     }
@@ -54,6 +58,7 @@ public class Address {
         this.city = city;
         this.country = country;
     }
+
 
     public Long getId() {
         return id;

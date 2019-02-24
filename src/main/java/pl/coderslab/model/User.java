@@ -41,11 +41,8 @@ public class User {
 
     private boolean enable;
 
-    @ManyToMany(cascade = {CascadeType.MERGE, CascadeType.PERSIST})
-    @JoinTable(name = "users_addresses",
-            joinColumns = @JoinColumn(name = "user_id"),
-            inverseJoinColumns = @JoinColumn(name = "address_id"))
-    List<Address> addressList = new ArrayList<>();
+    @OneToMany(mappedBy = "user")
+    private List<UserAddress> addresses;
 
     public User() {
     }
@@ -59,6 +56,8 @@ public class User {
         this.superAdmin = superAdmin;
         this.enable = enable;
     }
+
+
 
     public Long getId() {
         return id;
