@@ -25,6 +25,10 @@ public class Company {
     @NotBlank(message = "REGON number cannot be empty.")
     @Pattern(regexp = "\\d{9}")
     private String regon;
+    
+    @OneToOne
+    @JoinColumn(name = "address_id")
+    private Address address;
 
     public Company() {
     }
