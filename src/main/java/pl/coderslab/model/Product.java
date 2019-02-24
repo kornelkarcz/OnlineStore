@@ -36,6 +36,10 @@ public class Product {
     @EAN
     private  String eanNumber;
 
+    @ManyToOne
+    @JoinColumn(name = "category_id")
+    private Category category;
+
     public Product() {
     }
 

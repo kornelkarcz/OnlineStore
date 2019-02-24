@@ -3,6 +3,7 @@ package pl.coderslab.model;
 import org.hibernate.validator.constraints.NotBlank;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
 @Table(name = "categories", uniqueConstraints = @UniqueConstraint(columnNames = "name"))
@@ -14,6 +15,9 @@ public class Category {
 
     @NotBlank
     private String name;
+
+    @OneToMany(fetch = FetchType.LAZY, mappedBy = "category")
+    List<Product> productsList;
 
     public Category(){
     }
