@@ -25,10 +25,16 @@ public class Company {
     @NotBlank(message = "REGON number cannot be empty.")
     @Pattern(regexp = "\\d{9}")
     private String regon;
-    
+
+    //Assumption: one company is registered under one address
     @OneToOne
     @JoinColumn(name = "address_id")
     private Address address;
+
+    //Assumption: we consider only possibility of sole proprietorship
+    @OneToOne
+    @JoinColumn(name = "user_id")
+    private User user;
 
     public Company() {
     }
