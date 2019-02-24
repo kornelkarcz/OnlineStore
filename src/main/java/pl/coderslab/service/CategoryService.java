@@ -7,6 +7,8 @@ import org.springframework.transaction.annotation.Transactional;
 import pl.coderslab.model.Category;
 import pl.coderslab.repository.CategoryRepository;
 
+import java.util.List;
+
 @Component
 @Transactional
 public class CategoryService {
@@ -21,4 +23,17 @@ public class CategoryService {
     public void editCateoory(String name, Long id) {
         categoryRepository.editCategory(name, id);
     }
+
+    public List<Category> findAll() {
+        return categoryRepository.findAll();
+    }
+
+    public void deleteCategory(Long id) {
+        categoryRepository.delete(id);
+    }
+
+    public Category findById(Long id) {
+        return categoryRepository.findOne(id);
+    }
+
 }
