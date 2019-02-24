@@ -44,6 +44,9 @@ public class User {
     @OneToMany(mappedBy = "user")
     private List<UserAddress> addresses;
 
+    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
+    private List<Payment> paymentList = new ArrayList<>();
+
     public User() {
     }
 
@@ -56,7 +59,6 @@ public class User {
         this.superAdmin = superAdmin;
         this.enable = enable;
     }
-
 
 
     public Long getId() {
