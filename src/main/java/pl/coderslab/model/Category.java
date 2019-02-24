@@ -19,6 +19,9 @@ public class Category {
     @OneToMany(fetch = FetchType.LAZY, mappedBy = "category")
     List<Product> productsList;
 
+    @OneToMany(fetch = FetchType.LAZY, mappedBy = "category")
+    List<LeaseProduct> leaseProductList;
+
     public Category(){
     }
 

@@ -8,12 +8,10 @@ import javax.validation.constraints.Digits;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import java.math.BigDecimal;
-import java.util.ArrayList;
-import java.util.List;
 
 @Entity
-@Table(name = "products", uniqueConstraints = @UniqueConstraint(columnNames = "eanNumber"))
-public class Product {
+@Table(name = "lease_products")
+public class LeaseProduct {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -23,17 +21,17 @@ public class Product {
     @Size(min = 3, max = 50)
     private String name;
 
-    @NotBlank(message = "Manufacturer's name cannot be empty.")
-    @Size(min = 3, max = 50)
-    private String manufacturer;
-
     @NotNull(message = "Price cannot be null.")
     @Digits(integer = 4, fraction = 2, message = "Use digits only.")
     private BigDecimal price;
 
+    @NotBlank(message = "Manufacturer's name cannot be empty.")
+    @Size(min = 3, max = 50)
+    private String manufacturer;
+
     @NotBlank
     @Size(max = 1000)
-    private String description;
+    private String desciption;
 
     @NotBlank
     @EAN
@@ -42,18 +40,17 @@ public class Product {
     @ManyToOne
     @JoinColumn(name = "category_id")
     private Category category;
-    
-    @ManyToMany(mappedBy = "productList", cascade = {CascadeType.MERGE, CascadeType.PERSIST})
-    private List<Order> orderList = new ArrayList<>();
 
-    public Product() {
+
+
+    public LeaseProduct() {
     }
 
-    public Product(String name, String manufacturer, BigDecimal price, String description, String eanNumber) {
+    public LeaseProduct(String name, BigDecimal price, String manufacturer, String desciption, String eanNumber) {
         this.name = name;
-        this.manufacturer = manufacturer;
         this.price = price;
-        this.description = description;
+        this.manufacturer = manufacturer;
+        this.desciption = desciption;
         this.eanNumber = eanNumber;
     }
 
@@ -73,14 +70,6 @@ public class Product {
         this.name = name;
     }
 
-    public String getManufacturer() {
-        return manufacturer;
-    }
-
-    public void setManufacturer(String manufacturer) {
-        this.manufacturer = manufacturer;
-    }
-
     public BigDecimal getPrice() {
         return price;
     }
@@ -89,12 +78,20 @@ public class Product {
         this.price = price;
     }
 
-    public String getDescription() {
-        return description;
+    public String getManufacturer() {
+        return manufacturer;
     }
 
-    public void setDescription(String description) {
-        this.description = description;
+    public void setManufacturer(String manufacturer) {
+        this.manufacturer = manufacturer;
+    }
+
+    public String getDesciption() {
+        return desciption;
+    }
+
+    public void setDesciption(String desciption) {
+        this.desciption = desciption;
     }
 
     public String getEanNumber() {
