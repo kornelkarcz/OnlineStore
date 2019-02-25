@@ -1,6 +1,8 @@
 package pl.coderslab.model;
 
 import org.hibernate.validator.constraints.NotBlank;
+import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Controller;
 import pl.coderslab.utils.BCrypt;
 
 import javax.persistence.*;
