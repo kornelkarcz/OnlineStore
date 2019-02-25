@@ -33,7 +33,7 @@ public class LeaseProduct {
 
     @NotBlank
     @Size(max = 1000)
-    private String desciption;
+    private String description;
 
     @NotBlank
     @EAN
@@ -49,11 +49,11 @@ public class LeaseProduct {
     public LeaseProduct() {
     }
 
-    public LeaseProduct(String name, BigDecimal price, String manufacturer, String desciption, String eanNumber) {
+    public LeaseProduct(String name, BigDecimal price, String manufacturer, String description, String eanNumber) {
         this.name = name;
         this.price = price;
         this.manufacturer = manufacturer;
-        this.desciption = desciption;
+        this.description = description;
         this.eanNumber = eanNumber;
     }
 
@@ -89,12 +89,12 @@ public class LeaseProduct {
         this.manufacturer = manufacturer;
     }
 
-    public String getDesciption() {
-        return desciption;
+    public String getDescription() {
+        return description;
     }
 
-    public void setDesciption(String desciption) {
-        this.desciption = desciption;
+    public void setDescription(String description) {
+        this.description = description;
     }
 
     public String getEanNumber() {
@@ -103,5 +103,13 @@ public class LeaseProduct {
 
     public void setEanNumber(String eanNumber) {
         this.eanNumber = eanNumber;
+    }
+
+    public Category getCategory() {
+        return category;
+    }
+
+    public void setCategory(Category category) {
+        this.category = category;
     }
 }

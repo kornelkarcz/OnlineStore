@@ -7,7 +7,7 @@
 <body>
 <h1>List of all products</h1>
 
-<table border="1px">
+<table border="1px" cellpadding="10">
     <c:forEach items="${products}" var="product">
         <tr>
             <td>${product.id}</td>
@@ -21,7 +21,7 @@
     </c:forEach>
 </table>
 
-<a href="/product/add">Add next book</a>
+<a href="/product/add">Add next product</a>
 
 
 </body>

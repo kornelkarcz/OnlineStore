@@ -1,16 +1,52 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: kornelkarcz
-  Date: 2019-02-25
-  Time: 08:25
-  To change this template use File | Settings | File Templates.
---%>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Title</title>
+    <title>Editing lease product</title>
 </head>
 <body>
 
+<h1>Edit a lease product</h1>
+
+<table>
+    <form:form method="post" modelAttribute="leaseProduct" action="product-lease/edit">
+        <form:hidden path="id"/>
+        <tr>
+            <td>Name</td>
+            <td><form:input path="name"/></td>
+            <td><form:errors path="name"/></td>
+        </tr>
+        <tr>
+            <td>EAN Number</td>
+            <td><form:input path="eanNumber"/></td>
+            <td><form:errors path="eanNumber"/></td>
+        </tr>
+        <tr>
+            <td>Category</td>
+            <td><form:select path="category">
+                <form:option value="0" label="Select a category"/>
+                <form:options items="${categories}" itemLabel="name" itemValue="id"/>
+            </form:select></td>
+            <td><form:errors path="category"/></td>
+        </tr>
+        <tr>
+            <td>Manufacturer</td>
+            <td><form:input path="manufacturer"/></td>
+            <td><form:errors path="manufacturer"/></td>
+        </tr>
+        <tr>
+            <td>Price</td>
+            <td><form:input path="price"/></td>
+            <td><form:errors path="price"/></td>
+        </tr>
+        <tr>
+            <td>Description</td>
+            <td><form:textarea path="description"/></td>
+        </tr>
+        <tr>
+            <td><input type="submit" value="Submit"></td>
+        </tr>
+    </form:form>
+</table>
 </body>
 </html>
