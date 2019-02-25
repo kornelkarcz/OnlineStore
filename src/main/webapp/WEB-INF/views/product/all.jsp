@@ -8,6 +8,16 @@
 <h1>List of all products</h1>
 
 <table border="1px" cellpadding="10">
+
+    <thead>
+    <th>Id</th>
+    <th>Name</th>
+    <th>Category</th>
+    <th>Manufacturer</th>
+    <th>Price</th>
+    <th colspan="2">Actions</th>
+    </thead>
+
     <c:forEach items="${products}" var="product">
         <tr>
             <td>${product.id}</td>
