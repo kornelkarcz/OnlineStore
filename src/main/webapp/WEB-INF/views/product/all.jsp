@@ -15,8 +15,8 @@
             <td>${product.category.name}</td>
             <td>${product.manufacturer}</td>
             <td>${product.price}</td>
-            <td><a href="http://localhost:8080/books/edit/${product.id}">Edit</a></td>
-            <td><a href="http://localhost:8080/books/delete/${product.id}" onclick="return confirm('Are you sure you want to delete this item?')";>Delete</a></td>
+            <td><a href="http://localhost:8080/product/edit/${product.id}">Edit</a></td>
+            <td><a href="http://localhost:8080/product/delete/${product.id}" onclick="return confirm('Are you sure you want to delete this item?')";>Delete</a></td>
         </tr>
     </c:forEach>
 </table>
