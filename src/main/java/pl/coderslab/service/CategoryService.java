@@ -20,10 +20,6 @@ public class CategoryService {
         categoryRepository.save(category);
     }
 
-    public void editCateoory(String name, Long id) {
-        categoryRepository.editCategory(name, id);
-    }
-
     public List<Category> findAll() {
         return categoryRepository.findAll();
     }
