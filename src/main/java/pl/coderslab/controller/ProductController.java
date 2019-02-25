@@ -37,7 +37,7 @@ public class ProductController {
 
     @GetMapping("/all")
     public String findAllProduct(Model model) {
-        model.addAttribute("product", productService.findAll());
+        model.addAttribute("products", productService.findAll());
         return "product/all";
     }
 

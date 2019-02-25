@@ -21,11 +21,11 @@
         </tr>
         <tr>
             <td>Category</td>
-            <td><form:select path="categories">
+            <td><form:select path="category">
                 <form:option value="0" label="Select a category"/>
                 <form:options items="${categories}" itemLabel="name" itemValue="id"/>
             </form:select></td>
-            <td><form:errors path="categories"/></td>
+            <td><form:errors path="category"/></td>
         </tr>
         <tr>
             <td>Manufacturer</td>

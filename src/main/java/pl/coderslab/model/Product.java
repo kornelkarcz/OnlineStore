@@ -6,6 +6,7 @@ import org.hibernate.validator.constraints.NotBlank;
 import javax.persistence.*;
 import javax.validation.constraints.Digits;
 import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
 import java.math.BigDecimal;
 import java.util.ArrayList;
@@ -36,7 +37,7 @@ public class Product {
     private String description;
 
     @NotBlank
-    @EAN
+    @Pattern(regexp = "\\d{13}")
     private String eanNumber;
 
     @ManyToOne
@@ -103,5 +104,13 @@ public class Product {
 
     public void setEanNumber(String eanNumber) {
         this.eanNumber = eanNumber;
+    }
+
+    public Category getCategory() {
+        return category;
+    }
+
+    public void setCategory(Category category) {
+        this.category = category;
     }
 }
