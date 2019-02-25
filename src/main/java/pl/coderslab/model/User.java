@@ -1,6 +1,7 @@
 package pl.coderslab.model;
 
 import org.hibernate.validator.constraints.NotBlank;
+import pl.coderslab.utils.BCrypt;
 
 import javax.persistence.*;
 import javax.validation.constraints.Past;
@@ -98,7 +99,7 @@ public class User {
     }
 
     public void setPassword(String password) {
-        this.password = password;
+        this.password = BCrypt.hashpw(password, BCrypt.gensalt());
     }
 
     public LocalDateTime getDateOfBirth() {

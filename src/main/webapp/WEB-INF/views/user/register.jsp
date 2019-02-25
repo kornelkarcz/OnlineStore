@@ -16,7 +16,7 @@
 </head>
 <body>
 <h1>OnlineStore Register Form</h1>
-<h2>Please insert information below</h2>
+<h2>Please insert personal information below</h2>
 
 <table>
     <form:form method="post" modelAttribute="user">
