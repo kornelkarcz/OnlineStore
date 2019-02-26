@@ -3,15 +3,6 @@
 <html>
 <head>
     <title>Register</title>
-    <%--<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">--%>
-    <%--<link rel="stylesheet" href="/resources/demos/style.css">--%>
-    <%--<script src="https://code.jquery.com/jquery-1.12.4.js"></script>--%>
-    <%--<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>--%>
-    <%--<script>--%>
-        <%--$( function() {--%>
-            <%--$( "#datepicker" ).datepicker();--%>
-        <%--} );--%>
-    <%--</script>--%>
 </head>
 <body>
 <h1>OnlineStore Register Form</h1>
@@ -36,17 +27,9 @@
         </tr>
         <tr>
             <td>Password:</td>
-            <td><form:password path="password" /></td>
+            <td><form:password path="password"/></td>
             <td><form:errors path="password"/></td>
         </tr>
-
-        <tr>
-            <td>Date of birth:</td>
-            <td><form:input type="date" path="dateOfBirth"/></td>
-            <td><form:errors path="dateOfBirth"/></td>
-        </tr>
-
-
         <tr>
             <td><input type="submit" value="Next step"></td>
         </tr>

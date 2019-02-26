@@ -7,6 +7,7 @@
 <h1>Welcome to OnlineStore</h1>
 
 <a href="http://localhost:8080/user/register">Register</a>
+<a href="http://localhost:8080/user/login">Login</a>
 
 </body>
 </html>
