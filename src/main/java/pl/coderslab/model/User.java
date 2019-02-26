@@ -1,12 +1,12 @@
 package pl.coderslab.model;
 
 import org.hibernate.validator.constraints.NotBlank;
-import org.springframework.stereotype.Component;
-import org.springframework.stereotype.Controller;
+import org.springframework.format.annotation.DateTimeFormat;
+import pl.coderslab.converter.LocalDateTimeConverter;
 import pl.coderslab.utils.BCrypt;
 
 import javax.persistence.*;
-import javax.validation.constraints.Past;
+import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
 import java.time.LocalDateTime;
@@ -36,8 +36,7 @@ public class User {
     @NotBlank
     private String password;
 
-    @NotBlank
-    @Past
+    @Convert(converter = LocalDateTimeConverter.class)
     private LocalDateTime dateOfBirth;
 
     private boolean superAdmin;
@@ -51,6 +50,14 @@ public class User {
     private List<Payment> paymentList = new ArrayList<>();
 
     public User() {
+    }
+
+    public User(String firstName, String lastName, String email, String password, LocalDateTime dateOfBirth) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.email = email;
+        this.password = password;
+        this.dateOfBirth = dateOfBirth;
     }
 
     public User(String firstName, String lastName, String email, String password, LocalDateTime dateOfBirth, boolean superAdmin, boolean enable) {

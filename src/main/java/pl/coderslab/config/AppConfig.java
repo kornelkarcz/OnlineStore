@@ -14,6 +14,7 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 import pl.coderslab.converter.CategoryConverter;
+import pl.coderslab.converter.LocalDateTimeConverter;
 
 import javax.persistence.EntityManagerFactory;
 
@@ -42,7 +43,7 @@ public class AppConfig extends WebMvcConfigurerAdapter {
     @Bean
     public LocalEntityManagerFactoryBean entityManagerFactory() {
         LocalEntityManagerFactoryBean emfb = new LocalEntityManagerFactoryBean();
-        emfb.setPersistenceUnitName("onlineStorePersistenceUnit");
+        emfb.setPersistenceUnitName("onlineStoreInstance2PersistenceUnit");
         return emfb;
     }
 
@@ -55,10 +56,18 @@ public class AppConfig extends WebMvcConfigurerAdapter {
     @Override
     public void addFormatters(FormatterRegistry registry) {
         registry.addConverter(getCategoryConverter());
+        registry.addConverter(getLocalDateTimeConverter());
     }
 
     @Bean
     public CategoryConverter getCategoryConverter() {
         return new CategoryConverter();
     }
+
+    @Bean
+    public LocalDateTimeConverter getLocalDateTimeConverter() {
+        return new LocalDateTimeConverter();
+    }
+
+
 }

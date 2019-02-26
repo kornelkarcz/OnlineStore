@@ -26,11 +26,31 @@ public class UserAddress {
     @Size(min = 3, max = 25)
     private String type;
 
+    public UserAddress() {
+    }
+
+
     public String getType() {
         return type;
     }
 
     public void setType(String type) {
         this.type = type;
+    }
+
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
+    }
+
+    public Address getAddress() {
+        return address;
+    }
+
+    public void setAddress(Address address) {
+        this.address = address;
     }
 }

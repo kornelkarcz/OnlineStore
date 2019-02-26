@@ -26,6 +26,7 @@ public class AddressController {
     public String addAddress(Model model, HttpSession session) {
         User user = (User)session.getAttribute("user");
         model.addAttribute("address", new Address());
+        model.addAttribute("user", user);
         return "/address/register";
     }
 

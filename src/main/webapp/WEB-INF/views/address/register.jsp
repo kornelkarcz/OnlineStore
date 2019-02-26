@@ -1,8 +1,6 @@
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-         pageEncoding="UTF-8"%> <%@ taglib prefix = "c" uri =
-        "http://java.sun.com/jsp/jstl/core" %>
+
 <html>
 <head>
     <title>Add postal information</title>
@@ -13,7 +11,7 @@
 
 <table>
     <form:form method="post" modelAttribute="address">
-        <form:hidden path="${user.id}"/>
+        <form:hidden value="${user.id}" path="user"/>
         <tr>
             <td>Street name</td>
             <td><form:input path="streetName"/></td>

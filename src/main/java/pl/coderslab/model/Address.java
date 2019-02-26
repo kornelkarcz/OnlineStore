@@ -46,7 +46,6 @@ public class Address {
     @OneToMany(mappedBy = "address")
     private List<UserAddress> employees;
 
-
     public Address() {
     }
 
@@ -115,4 +114,6 @@ public class Address {
     public void setCountry(String country) {
         this.country = country;
     }
+
+
 }
