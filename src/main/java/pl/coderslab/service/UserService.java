@@ -6,6 +6,8 @@ import org.springframework.transaction.annotation.Transactional;
 import pl.coderslab.model.User;
 import pl.coderslab.repository.UserRepository;
 
+import java.util.List;
+
 @Component
 @Transactional
 public class UserService {
@@ -19,6 +21,10 @@ public class UserService {
 
     public User findById(Long id) {
         return userRepository.findOne(id);
+    }
+
+    public List<User> findAll() {
+        return userRepository.findAll();
     }
 
 

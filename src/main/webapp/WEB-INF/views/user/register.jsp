@@ -31,7 +31,7 @@
             <td><form:errors path="password"/></td>
         </tr>
         <tr>
-            <td><input type="submit" value="Next step"></td>
+            <td><input type="submit" value="Register"></td>
         </tr>
     </form:form>
 </table>
