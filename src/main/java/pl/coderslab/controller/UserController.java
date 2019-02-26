@@ -12,7 +12,6 @@ import javax.validation.Valid;
 
 @Controller
 @RequestMapping("/user")
-@SessionAttributes("user")
 public class UserController {
 
 
@@ -26,10 +25,12 @@ public class UserController {
     }
 
     @PostMapping("/register")
-    public String registerUser(@Valid User user, BindingResult result, Model model) {
+    public String registerUser(@Valid User user, BindingResult result) {
+        if (result.hasErrors()) {
+            return "/register";
+        }
         userService.registerUser(user);
-        model.addAttribute("user", user);
-        return "redirect:/address/register";
+        return "/index";
     }
 
 }

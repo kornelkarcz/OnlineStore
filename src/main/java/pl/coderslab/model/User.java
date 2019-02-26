@@ -1,15 +1,11 @@
 package pl.coderslab.model;
 
 import org.hibernate.validator.constraints.NotBlank;
-import org.springframework.format.annotation.DateTimeFormat;
-import pl.coderslab.converter.LocalDateTimeConverter;
 import pl.coderslab.utils.BCrypt;
 
 import javax.persistence.*;
-import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
-import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
