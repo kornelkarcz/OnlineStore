@@ -11,7 +11,6 @@
 
 <table>
     <form:form method="post" modelAttribute="address">
-        <form:hidden value="${user.id}" path="user"/>
         <tr>
             <td>Street name</td>
             <td><form:input path="streetName"/></td>

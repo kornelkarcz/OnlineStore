@@ -9,10 +9,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import pl.coderslab.model.Address;
-import pl.coderslab.model.User;
 import pl.coderslab.service.AddressService;
 
-import javax.servlet.http.HttpSession;
 import javax.validation.Valid;
 
 @Controller
@@ -23,10 +21,8 @@ public class AddressController {
     private AddressService addressService;
 
     @GetMapping("/register")
-    public String addAddress(Model model, HttpSession session) {
-        User user = (User)session.getAttribute("user");
+    public String addAddress(Model model) {
         model.addAttribute("address", new Address());
-        model.addAttribute("user", user);
         return "/address/register";
     }
 
@@ -34,7 +30,7 @@ public class AddressController {
     @ResponseBody
     public String addAddress(@Valid Address address, BindingResult result) {
         addressService.registerAddress(address);
-        return "User registered";
+        return "Address registered";
     }
 
 
