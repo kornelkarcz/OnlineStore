@@ -2,29 +2,25 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
+    <link rel="stylesheet" href="/css/style.css">
     <title>Login</title>
+
 </head>
 <body>
-<h1>Log in</h1>
 
-<table>
+<div class="form-style-10">
+    <h1>Sign in!</h1>
     <form:form method="post" modelAttribute="fake">
+        <div class="section">Login Info</div>
+        <div class="inner-wrap">
+            <label>Email Address <form:input path="email" type="email" name="field1"/></label>
+            <label>Password <form:input path="password" type="password" name="field2"/></label>
+        </div>
 
-        <tr>
-            <td>E-mail:</td>
-            <td><form:input path="email"/></td>
-            <td><form:errors path="email"/></td>
-        </tr>
-        <tr>
-            <td>Password:</td>
-            <td><form:password path="password"/></td>
-            <td><form:errors path="password"/></td>
-        </tr>
-        <tr>
-            <td><input type="submit" value="Login"></td>
-        </tr>
+        <div class="button-section">
+            <input type="submit" value="Sign in" name="Sign Up"/>
+        </div>
     </form:form>
-
-</table>
+</div>
 </body>
 </html>
