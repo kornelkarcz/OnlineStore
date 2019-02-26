@@ -9,6 +9,6 @@ public class HomepageController {
 
     @RequestMapping("/")
     public String sendToHomepage() {
-        return "/";
+        return "/index";
     }
 }
