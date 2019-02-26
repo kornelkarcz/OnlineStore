@@ -58,6 +58,8 @@ public class Product {
         this.eanNumber = eanNumber;
     }
 
+
+
     public Long getId() {
         return id;
     }

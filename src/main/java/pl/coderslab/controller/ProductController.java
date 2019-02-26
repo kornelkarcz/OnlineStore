@@ -5,6 +5,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
+import pl.coderslab.model.Cart;
 import pl.coderslab.model.Category;
 import pl.coderslab.model.Product;
 import pl.coderslab.service.CategoryService;
