@@ -25,9 +25,9 @@ public class Address {
     private String streetName;
 
     @NotNull
-
     private int houseNumber;
 
+    @NotNull
     private int flatNumber;
 
     @NotBlank
@@ -41,10 +41,6 @@ public class Address {
     @NotBlank
     @Size(min = 3, max = 50)
     private String country;
-
-
-    @OneToMany(mappedBy = "address")
-    private List<UserAddress> employees;
 
     public Address() {
     }
