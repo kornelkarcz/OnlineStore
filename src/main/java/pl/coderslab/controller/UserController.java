@@ -58,7 +58,7 @@ public class UserController {
             }
         }
         model.addAttribute("logged", logged);
-        return "redirect:/index";
+        return "redirect:/";
     }
 
 }
