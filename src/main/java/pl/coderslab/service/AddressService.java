@@ -13,7 +13,7 @@ public class AddressService {
     @Autowired
     private AddressRepository addressRepository;
 
-    public void registerAddress(Address address) {
+    public void saveAddress(Address address) {
         addressRepository.save(address);
     }
 

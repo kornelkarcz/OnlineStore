@@ -27,5 +27,8 @@ public class UserService {
         return userRepository.findAll();
     }
 
+    public void assignAddressToUser(Long addressId, Long userId) {
+
+    }
 
 }

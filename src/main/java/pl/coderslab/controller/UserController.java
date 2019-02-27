@@ -5,12 +5,14 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
+import pl.coderslab.model.Address;
 import pl.coderslab.model.FakeUser;
 import pl.coderslab.model.User;
 import pl.coderslab.service.AddressService;
 import pl.coderslab.service.UserService;
 import pl.coderslab.utils.BCrypt;
 
+import javax.servlet.http.HttpSession;
 import javax.validation.Valid;
 import java.util.List;
 
@@ -70,6 +72,24 @@ public class UserController {
         return "user/myaccount";
     }
 
+    @RequestMapping("/add-address")
+    public String addAddress(Model model) {
+        model.addAttribute("address", new Address());
+        return "user/add-address";
+    }
+
+    @PostMapping("/add-address")
+    public String addAddress(@Valid Address address, BindingResult result, HttpSession session) {
+        if (result.hasErrors()) {
+            return "/add-address";
+        } else {
+            User sessionUser = (User) session.getAttribute("logged");
+            addressService.saveAddress(address);
+            userService.assignAddressToUser(address.getId(), sessionUser.getId());
+
+            return "user/myaccount";
+        }
+    }
 
 
 }

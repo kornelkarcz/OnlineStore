@@ -29,7 +29,7 @@ public class AddressController {
     @PostMapping("/register")
     @ResponseBody
     public String addAddress(@Valid Address address, BindingResult result) {
-        addressService.registerAddress(address);
+        addressService.saveAddress(address);
         return "Address registered";
     }
 
