@@ -56,7 +56,6 @@ public class CartController {
     public String cart(Model model) {
 
         model.addAttribute("cart", cart);
-        System.out.println(cart.getCartItems());
 
         return "cart/cartItems";
     }
