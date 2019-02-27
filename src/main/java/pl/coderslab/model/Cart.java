@@ -22,5 +22,4 @@ public class Cart {
         return cartItems;
     }
 
-
 }

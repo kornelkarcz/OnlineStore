@@ -10,43 +10,43 @@
 <h1>Add a product</h1>
 
 <%--<table>--%>
-    <%--<form:form method="post" modelAttribute="product">--%>
-        <%--<tr>--%>
-            <%--<td>Name</td>--%>
-            <%--<td><form:input path="name"/></td>--%>
-            <%--<td><form:errors path="name"/></td>--%>
-        <%--</tr>--%>
-        <%--<tr>--%>
-            <%--<td>EAN Number</td>--%>
-            <%--<td><form:input path="eanNumber"/></td>--%>
-            <%--<td><form:errors path="eanNumber"/></td>--%>
-        <%--</tr>--%>
-        <%--<tr>--%>
-            <%--<td>Category</td>--%>
-            <%--<td><form:select path="category">--%>
-                <%--<form:option value="0" label="Select a category"/>--%>
-                <%--<form:options items="${categories}" itemLabel="name" itemValue="id"/>--%>
-            <%--</form:select></td>--%>
-            <%--<td><form:errors path="category"/></td>--%>
-        <%--</tr>--%>
-        <%--<tr>--%>
-            <%--<td>Manufacturer</td>--%>
-            <%--<td><form:input path="manufacturer"/></td>--%>
-            <%--<td><form:errors path="manufacturer"/></td>--%>
-        <%--</tr>--%>
-        <%--<tr>--%>
-            <%--<td>Price</td>--%>
-            <%--<td><form:input path="price"/></td>--%>
-            <%--<td><form:errors path="price"/></td>--%>
-        <%--</tr>--%>
-        <%--<tr>--%>
-            <%--<td>Description</td>--%>
-            <%--<td><form:textarea path="description"/></td>--%>
-        <%--</tr>--%>
-        <%--<tr>--%>
-            <%--<td><input type="submit" value="Submit"></td>--%>
-        <%--</tr>--%>
-    <%--</form:form>--%>
+<%--<form:form method="post" modelAttribute="product">--%>
+<%--<tr>--%>
+<%--<td>Name</td>--%>
+<%--<td><form:input path="name"/></td>--%>
+<%--<td><form:errors path="name"/></td>--%>
+<%--</tr>--%>
+<%--<tr>--%>
+<%--<td>EAN Number</td>--%>
+<%--<td><form:input path="eanNumber"/></td>--%>
+<%--<td><form:errors path="eanNumber"/></td>--%>
+<%--</tr>--%>
+<%--<tr>--%>
+<%--<td>Category</td>--%>
+<%--<td><form:select path="category">--%>
+<%--<form:option value="0" label="Select a category"/>--%>
+<%--<form:options items="${categories}" itemLabel="name" itemValue="id"/>--%>
+<%--</form:select></td>--%>
+<%--<td><form:errors path="category"/></td>--%>
+<%--</tr>--%>
+<%--<tr>--%>
+<%--<td>Manufacturer</td>--%>
+<%--<td><form:input path="manufacturer"/></td>--%>
+<%--<td><form:errors path="manufacturer"/></td>--%>
+<%--</tr>--%>
+<%--<tr>--%>
+<%--<td>Price</td>--%>
+<%--<td><form:input path="price"/></td>--%>
+<%--<td><form:errors path="price"/></td>--%>
+<%--</tr>--%>
+<%--<tr>--%>
+<%--<td>Description</td>--%>
+<%--<td><form:textarea path="description"/></td>--%>
+<%--</tr>--%>
+<%--<tr>--%>
+<%--<td><input type="submit" value="Submit"></td>--%>
+<%--</tr>--%>
+<%--</form:form>--%>
 <%--</table>--%>
 
 <div class="form-style-10">
@@ -69,6 +69,21 @@
             <input type="submit" value="Add" name="Sign Up"/>
         </div>
     </form:form>
+</div>
+
+<div id="footerdiv">
+    <footer id="footer">
+        <div class="wrapper">
+            <nav>
+                <ul>
+                    <li><a href="">Homepage</a></li>
+                    <li><a href="">Contact us</a></li>
+                    <li><a href="">About us</a></li>
+                    <li><a href="">Forum</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
 </div>
 
 

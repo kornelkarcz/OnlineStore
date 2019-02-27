@@ -3,19 +3,18 @@ package pl.coderslab.controller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 import pl.coderslab.model.Cart;
 import pl.coderslab.model.CartItem;
 import pl.coderslab.model.Product;
 import pl.coderslab.service.ProductService;
 
+import javax.servlet.http.HttpSession;
 import java.util.List;
 
 @Controller
 @RequestMapping("/cart")
+@SessionAttributes("cart")
 public class CartController {
 
     @Autowired
@@ -44,14 +43,18 @@ public class CartController {
             }
         }
 
-
-        return "siema";
+        model.addAttribute("cart", cart);
+        return "dodales produkt do koszyka";
 //        return "redirect:/product/all";
     }
 
-    @RequestMapping("/cart")
-    public String cart(Model model) {
-        model.addAttribute("cart", cart);
+    @RequestMapping("/")
+    public String cart(Model model, HttpSession session) {
+
+        Cart sessionCart = (Cart) session.getAttribute("cart");
+        model.addAttribute("cart", sessionCart);
+        System.out.println(sessionCart.getCartItems());
+
         return "cart/cartItems";
     }
 

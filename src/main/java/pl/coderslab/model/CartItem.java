@@ -48,11 +48,4 @@ public class CartItem {
         return Objects.hash(product);
     }
 
-    @Override
-    public String toString() {
-        return "CartItem{" +
-                "quantity=" + quantity +
-                ", product=" + product +
-                '}';
-    }
 }

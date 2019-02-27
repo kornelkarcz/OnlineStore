@@ -7,6 +7,7 @@ import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 import pl.coderslab.model.FakeUser;
 import pl.coderslab.model.User;
+import pl.coderslab.service.AddressService;
 import pl.coderslab.service.UserService;
 import pl.coderslab.utils.BCrypt;
 
@@ -21,6 +22,9 @@ public class UserController {
 
     @Autowired
     private UserService userService;
+
+    @Autowired
+    private AddressService addressService;
 
     @GetMapping("/register")
     public String registerUser(Model model) {
@@ -60,5 +64,12 @@ public class UserController {
         model.addAttribute("logged", logged);
         return "redirect:/";
     }
+
+    @RequestMapping("/myaccount")
+    public String displayMyAccount() {
+        return "user/myaccount";
+    }
+
+
 
 }

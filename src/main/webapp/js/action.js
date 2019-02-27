@@ -1,33 +1,18 @@
 document.addEventListener("DOMContentLoaded", function () {
 
-    // var y = document.getElementById("quantity").value;
-    // var k = document.getElementById("link");
-    // var z = k.getAttribute("href");
-    // var x = k.setAttribute("href", (z + y).toString());
-    //
-    // console.log(y);
-    // console.log(k);
-    // console.log(z);
-    // console.log(x);
+    var buttons = document.querySelectorAll(".itemRow .button");
 
+    for (i = 0; i < buttons.length; i++) {
+        var button = buttons[i];
+        button.addEventListener("click", function (event) {
 
-    // function passValue() {
-    //
-    //     console.log(y);
-    //     console.log(z);
-    //     console.log(x);
-    //
-    //
-    // }
+            var id = this.parentNode.parentNode.children[0].innerHTML;
+            var correctQuantity = this.parentNode.parentNode.children[5].children[0].value;
 
-    var input = document.getElementById("quantity");
+            window.location = "http://localhost:8080/cart/add-to-cart/" + id + "/" + correctQuantity;
 
-    input.addEventListener("input", function() {
+        })
+    }
 
-        var y = document.getElementById("quantity").value;
-        var z = document.getElementById("link").getAttribute("href");
-        var x = document.getElementById("link").setAttribute("href", z + y);
-
-    })
 
 })
