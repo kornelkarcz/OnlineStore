@@ -9,12 +9,10 @@ import pl.coderslab.model.CartItem;
 import pl.coderslab.model.Product;
 import pl.coderslab.service.ProductService;
 
-import javax.servlet.http.HttpSession;
 import java.util.List;
 
 @Controller
 @RequestMapping("/cart")
-@SessionAttributes("cart")
 public class CartController {
 
     @Autowired
@@ -24,13 +22,19 @@ public class CartController {
     private ProductService productService;
 
     @GetMapping("/add-to-cart/{id}/{quantity}")
-    @ResponseBody
     public String addToCart(@PathVariable Long id, @PathVariable Integer quantity, Model model) {
 
         List<Product> productList = productService.findAll();
         List<CartItem> cartItems = cart.getCartItems();
         Product fakeProduct = new Product();
         fakeProduct.setId(id);
+
+        /**
+         *Co zrobiłem, że działa?
+         * 1. Override equals method w klasie Product
+         * 2. Override toString() w klasie CartItem i Product
+         */
+
         CartItem fakeCartItem = new CartItem(fakeProduct);
 
         if (productList.contains(fakeProduct)) {
@@ -44,16 +48,15 @@ public class CartController {
         }
 
         model.addAttribute("cart", cart);
-        return "dodales produkt do koszyka";
+        return "redirect:/cart/";
 //        return "redirect:/product/all";
     }
 
     @RequestMapping("/")
-    public String cart(Model model, HttpSession session) {
+    public String cart(Model model) {
 
-        Cart sessionCart = (Cart) session.getAttribute("cart");
-        model.addAttribute("cart", sessionCart);
-        System.out.println(sessionCart.getCartItems());
+        model.addAttribute("cart", cart);
+        System.out.println(cart.getCartItems());
 
         return "cart/cartItems";
     }

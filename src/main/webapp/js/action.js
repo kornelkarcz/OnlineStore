@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
 
+    //W widoku będziemy mieli wiele przycisków dlatego musimy pobrać je wszystkie i do wszystkich przypisać pózniej event
     var buttons = document.querySelectorAll(".itemRow .button");
 
     for (i = 0; i < buttons.length; i++) {

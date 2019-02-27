@@ -11,6 +11,7 @@ import javax.validation.constraints.Size;
 import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 @Entity
 @Table(name = "products", uniqueConstraints = @UniqueConstraint(columnNames = "eanNumber"))
@@ -117,16 +118,26 @@ public class Product {
     }
 
     @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Product product = (Product) o;
+        return Objects.equals(id, product.id);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id);
+    }
+
+    @Override
     public String toString() {
         return "Product{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
+                "name='" + name + '\'' +
                 ", manufacturer='" + manufacturer + '\'' +
                 ", price=" + price +
                 ", description='" + description + '\'' +
                 ", eanNumber='" + eanNumber + '\'' +
-                ", category=" + category +
-                ", orderList=" + orderList +
                 '}';
     }
 }
