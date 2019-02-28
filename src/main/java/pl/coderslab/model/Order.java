@@ -6,7 +6,9 @@ import javax.validation.constraints.NotNull;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 @Entity
 @Table(name = "orders")
@@ -16,28 +18,20 @@ public class Order {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @NotNull
-    private Integer quantity;
-
     private LocalDateTime orderDate;
 
-    @NotNull
-    @Digits(integer = 5, fraction = 2)
-    private BigDecimal sum;
+    @OneToMany(mappedBy = "order", cascade = {CascadeType.PERSIST, CascadeType.MERGE})
+    private List<ProductInOrder> productInOrders = new ArrayList<>();
 
-    @ManyToMany(cascade = {CascadeType.PERSIST, CascadeType.MERGE})
-    @JoinTable(name = "products_orders",
-            joinColumns = {@JoinColumn(name = "order_id")},
-            inverseJoinColumns = {@JoinColumn(name = "product_id")})
-    private List<Product> productList = new ArrayList<>();
+    @ManyToOne
+    private User user;
+
 
     public Order() {
     }
 
     public Order(Integer quantity, LocalDateTime orderDate, BigDecimal sum) {
-        this.quantity = quantity;
         this.orderDate = orderDate;
-        this.sum = sum;
     }
 
     public Long getId() {
@@ -48,14 +42,6 @@ public class Order {
         this.id = id;
     }
 
-    public Integer getQuantity() {
-        return quantity;
-    }
-
-    public void setQuantity(Integer quantity) {
-        this.quantity = quantity;
-    }
-
     public LocalDateTime getOrderDate() {
         return orderDate;
     }
@@ -64,11 +50,19 @@ public class Order {
         this.orderDate = orderDate;
     }
 
-    public BigDecimal getSum() {
-        return sum;
+    public List<ProductInOrder> getProductInOrders() {
+        return productInOrders;
     }
 
-    public void setSum(BigDecimal sum) {
-        this.sum = sum;
+    public void setProductInOrders(List<ProductInOrder> productInOrders) {
+        this.productInOrders = productInOrders;
+    }
+
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
     }
 }
