@@ -43,7 +43,7 @@ public class User {
     private Address address;
 
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
-    private List<Payment> paymentList = new ArrayList<>();
+    private List<Order> orderList = new ArrayList<>();
 
     public User() {
     }
@@ -118,6 +118,14 @@ public class User {
 
     public void setAddress(Address address) {
         this.address = address;
+    }
+
+    public List<Order> getOrderList() {
+        return orderList;
+    }
+
+    public void setOrderList(List<Order> orderList) {
+        this.orderList = orderList;
     }
 
     @Override
