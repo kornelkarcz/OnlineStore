@@ -1,5 +1,5 @@
 <header>
-    <nav class="navbar navbar-default navbar-fixed-top" style="background-color: #2b72e5; color: white">
+    <nav class="navbar navbar-default navbar-fixed-top" style="background-color: #204d74; color: white">
         <div class="container-fluid">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
