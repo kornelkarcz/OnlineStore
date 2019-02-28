@@ -3,10 +3,11 @@
 <html>
 <head>
     <title>All products for lease</title>
+    <%@ include file="../dependecies.jsp" %>
 </head>
 <body>
+<%@ include file="../header.jsp" %>
 
-<h1>List of all products</h1>
 
 <table border="1px" cellpadding="10">
     <thead>
@@ -34,6 +35,6 @@
 </table>
 
 <a href="/lease-product/add">Add next lease product</a>
-
+<%@ include file="../footer.jsp" %>
 </body>
 </html>

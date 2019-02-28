@@ -4,9 +4,10 @@
 <html>
 <head>
     <title>Adding product for lease</title>
+    <%@ include file="../dependecies.jsp" %>
 </head>
 <body>
-<h1>Add a product for lease</h1>
+<%@ include file="../header.jsp" %>
 
 <table>
     <form:form method="post" modelAttribute="leaseProduct">
@@ -47,6 +48,7 @@
         </tr>
     </form:form>
 </table>
+<%@ include file="../footer.jsp" %>
 </body>
 
 </html>

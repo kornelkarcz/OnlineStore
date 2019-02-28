@@ -11,7 +11,6 @@
 <body>
 <%@ include file="../header.jsp" %>
 
-<h1>List of all products</h1>
 <div>
     <div>
         <table>

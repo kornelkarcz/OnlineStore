@@ -3,10 +3,10 @@
 <html>
 <head>
     <title>Editing lease product</title>
+    <%@ include file="../dependecies.jsp" %>
 </head>
 <body>
-
-<h1>Edit a lease product</h1>
+<%@ include file="../header.jsp" %>
 
 <table>
     <form:form method="post" modelAttribute="leaseProduct" action="product-lease/edit">
@@ -48,5 +48,6 @@
         </tr>
     </form:form>
 </table>
+<%@ include file="../footer.jsp" %>
 </body>
 </html>
