@@ -11,27 +11,27 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import pl.coderslab.model.Address;
 import pl.coderslab.service.AddressService;
 
-import javax.validation.Valid;
-
-@Controller
-@RequestMapping("/address")
-public class AddressController {
-
-    @Autowired
-    private AddressService addressService;
-
-    @GetMapping("/register")
-    public String addAddress(Model model) {
-        model.addAttribute("address", new Address());
-        return "/address/register";
-    }
-
-    @PostMapping("/register")
-    @ResponseBody
-    public String addAddress(@Valid Address address, BindingResult result) {
-        addressService.saveAddress(address);
-        return "Address registered";
-    }
-
-
-}
+//import javax.validation.Valid;
+//
+//@Controller
+//@RequestMapping("/address")
+//public class AddressController {
+//
+//    @Autowired
+//    private AddressService addressService;
+//
+//    @GetMapping("/register")
+//    public String addAddress(Model model) {
+//        model.addAttribute("address", new Address());
+//        return "/address/register";
+//    }
+//
+//    @PostMapping("/register")
+//    @ResponseBody
+//    public String addAddress(@Valid Address address, BindingResult result) {
+//        addressService.saveAddress(address);
+//        return "Address registered";
+//    }
+//
+//
+//}
