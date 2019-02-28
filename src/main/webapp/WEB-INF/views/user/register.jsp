@@ -7,8 +7,6 @@
 </head>
 <body>
 <%@ include file="../header.jsp" %>
-<h1>OnlineStore Register Form</h1>
-<h2>Please insert personal information below</h2>
 
 <div class="form-style-10">
     <h1>Register Now!</h1>

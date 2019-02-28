@@ -10,7 +10,8 @@
 <%@ include file="../header.jsp" %>
 
 <div class="form-style-10">
-    <h1>Sign in!</h1>
+    <h1>Login Now!</h1>
+
     <form:form method="post" modelAttribute="fake">
         <div class="section">Login Info</div>
         <div class="inner-wrap">
