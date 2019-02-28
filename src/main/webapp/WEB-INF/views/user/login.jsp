@@ -2,11 +2,12 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <link rel="stylesheet" href="/css/style.css">
     <title>Login</title>
+    <%@ include file="../dependecies.jsp" %>
 
 </head>
 <body>
+<%@ include file="../header.jsp" %>
 
 <div class="form-style-10">
     <h1>Sign in!</h1>
@@ -22,5 +23,6 @@
         </div>
     </form:form>
 </div>
+<%@ include file="../footer.jsp" %>
 </body>
 </html>

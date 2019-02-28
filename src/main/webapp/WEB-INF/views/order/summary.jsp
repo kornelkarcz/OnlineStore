@@ -3,10 +3,12 @@
 <html>
 <head>
     <title>Order summary</title>
+    <%@ include file="../dependecies.jsp" %>
     <script src="/js/order.js" type="text/javascript"></script>
 
 </head>
 <body>
+<%@ include file="../header.jsp" %>
 <div>
     <h1>You are at the checkout</h1>
 
@@ -30,5 +32,6 @@
     <button class="cancel-button">Cancel</button>
 
 </div>
+<%@ include file="../footer.jsp" %>
 </body>
 </html>

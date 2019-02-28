@@ -9,10 +9,10 @@
 <body>
 <%@ include file="header.jsp" %>
 
-<div class="wrapper">
+<div>
 
 
-    <div class="push"></div>
+
 
 </div>
 

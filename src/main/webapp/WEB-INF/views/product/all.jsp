@@ -5,14 +5,11 @@
 <html>
 <head>
     <title>All products</title>
-    <script src="/js/action.js" type="text/javascript"></script>
-    <%--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"--%>
-    <%--integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">--%>
-    <link rel="stylesheet" href="/css/style.css">
+    <%@ include file="../dependecies.jsp" %>
 
 </head>
 <body>
-
+<%@ include file="../header.jsp" %>
 
 <h1>List of all products</h1>
 <div>
@@ -58,20 +55,6 @@
     <a href="/product/add">Add next product</a>
 </div>
 
-<div id="footerdiv">
-    <footer id="footer">
-        <div class="wrapper">
-            <nav>
-                <ul>
-                    <li><a href="">Homepage</a></li>
-                    <li><a href="">Contact us</a></li>
-                    <li><a href="">About us</a></li>
-                    <li><a href="">Forum</a></li>
-                </ul>
-            </nav>
-        </div>
-    </footer>
-</div>
-
+<%@ include file="../footer.jsp" %>
 </body>
 </html>

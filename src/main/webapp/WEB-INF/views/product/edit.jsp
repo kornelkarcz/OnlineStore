@@ -3,8 +3,10 @@
 <html>
 <head>
     <title>Editing product</title>
+    <%@ include file="../dependecies.jsp" %>
 </head>
 <body>
+<%@ include file="../header.jsp" %>
 <h1>Edit a product</h1>
 
 <table>
@@ -47,5 +49,6 @@
         </tr>
     </form:form>
 </table>
+<%@ include file="../footer.jsp" %>
 </body>
 </html>

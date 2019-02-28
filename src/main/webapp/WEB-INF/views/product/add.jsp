@@ -4,10 +4,11 @@
 <html lang="en">
 <head>
     <title>Adding product</title>
-    <link rel="stylesheet" href="/css/style.css">
+    <%@ include file="../dependecies.jsp" %>
 
 </head>
 <body>
+<%@ include file="../header.jsp" %>
 <h1>Add a product</h1>
 
 <%--<table>--%>
@@ -86,7 +87,6 @@
         </div>
     </footer>
 </div>
-
-
+<%@ include file="../footer.jsp" %>
 </body>
 </html>

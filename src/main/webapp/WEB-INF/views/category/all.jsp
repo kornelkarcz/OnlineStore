@@ -3,8 +3,10 @@
 <html>
 <head>
     <title>All categories</title>
+    <%@ include file="../dependecies.jsp" %>
 </head>
 <body>
+<%@ include file="../header.jsp" %>
 <h1>All categories</h1>
 
 <table border="1px">
@@ -26,5 +28,6 @@
 </table>
 
 <a href="/category/add">Add next category</a>
+<%@ include file="../footer.jsp" %>
 </body>
 </html>

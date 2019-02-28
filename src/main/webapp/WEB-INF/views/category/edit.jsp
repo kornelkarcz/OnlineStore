@@ -3,8 +3,10 @@
 <html>
 <head>
     <title>Editing category</title>
+    <%@ include file="../dependecies.jsp" %>
 </head>
 <body>
+<%@ include file="../header.jsp" %>
 <h1>Edit a category</h1>
 <table>
     <form:form method="post" modelAttribute="category" action="/category/edit">
@@ -20,5 +22,6 @@
         </tr>
     </form:form>
 </table>
+<%@ include file="../footer.jsp" %>
 </body>
 </html>

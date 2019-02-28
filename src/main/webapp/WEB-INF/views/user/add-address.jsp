@@ -3,8 +3,10 @@
 <html>
 <head>
     <title>Add address</title>
+    <%@ include file="../dependecies.jsp" %>
 </head>
 <body>
+<%@ include file="../header.jsp" %>
 <h1>Add your address</h1>
 
 <form:form method="post" modelAttribute="address">
@@ -45,6 +47,6 @@
         </tr>
     </table>
 </form:form>
-
+<%@ include file="../footer.jsp" %>
 </body>
 </html>

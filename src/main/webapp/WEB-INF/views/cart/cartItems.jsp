@@ -3,9 +3,9 @@
 <html>
 <head>
     <title>Cart</title>
-    <script src="/js/cartItem.js" type="text/javascript"></script>
-</head>
+    <%@ include file="../dependecies.jsp" %></head>
 <body>
+<%@ include file="../header.jsp" %>
 
 <div>
     <h1>List of items in your cart</h1>
@@ -21,5 +21,6 @@
     <button class="checkout">Go to the checkout</button>
 
 </div>
+<%@ include file="../footer.jsp" %>
 </body>
 </html>
