@@ -3,6 +3,8 @@
 <html>
 <head>
     <title>Order summary</title>
+    <script src="/js/order.js" type="text/javascript"></script>
+
 </head>
 <body>
 <div>
@@ -24,7 +26,8 @@
 
     <br>
 
-    <button>Pay</button>
+    <button class="pay-button">Pay</button>
+    <button class="cancel-button">Cancel</button>
 
 </div>
 </body>
