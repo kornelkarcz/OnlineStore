@@ -10,6 +10,7 @@
 
     <c:forEach var="cartItem" items="${cart.cartItems}">
         <tr>
+            <td>${cartItem.product.id}</td>
             <td>${cartItem.product.name}</td>
             <td>${cartItem.product.manufacturer}</td>
             <td>${cartItem.product.price}</td>
@@ -18,6 +19,12 @@
             <br>
         </tr>
     </c:forEach>
+
+    Sum: ${cart.sum}
+
+    <br>
+
+    <button>Pay</button>
 
 </div>
 </body>

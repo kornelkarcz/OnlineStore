@@ -1,6 +1,5 @@
 package pl.coderslab.model;
 
-import org.hibernate.validator.constraints.EAN;
 import org.hibernate.validator.constraints.NotBlank;
 
 import javax.persistence.*;

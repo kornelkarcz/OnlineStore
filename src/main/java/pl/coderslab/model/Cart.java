@@ -19,22 +19,30 @@ public class Cart {
 
     public void addToCart(CartItem cartItem) {
         cartItems.add(cartItem);
+
+        //1.Przypisujemy cenę produktu do tempSum
+        BigDecimal tempSum = cartItem.getProduct().getPrice();
+
+        //2.Przekształcamy ilość produktów na BigDecimal
+        BigDecimal quantity = BigDecimal.valueOf(cartItem.getQuantity());
+
+        //3. Mnożymy 'tempsum' przez ilość
+        tempSum = tempSum.multiply(quantity);
+
+        //4.Dodajemy tempsum do 'sum'
+        sum = sum.add(tempSum);
     }
 
     public List<CartItem> getCartItems() {
         return cartItems;
     }
 
-    public BigDecimal calculateSum(List<CartItem> list) {
-
-        for (CartItem temp : cartItems) {
-
-            BigDecimal price = temp.getProduct().getPrice();
-            BigDecimal quantity = BigDecimal.valueOf(temp.getQuantity());
-
-            sum = price.multiply(quantity);
-        }
+    public BigDecimal getSum() {
         return sum;
+    }
+
+    public void setSum(BigDecimal sum) {
+        this.sum = sum;
     }
 
 }

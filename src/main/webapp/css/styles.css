@@ -1,0 +1,121 @@
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.3/css/mdb.min.css);
+
+.navbar {
+    background-color: #2d68c6 !important;
+    padding-bottom: 20px;
+    font-size: 16px;
+}
+
+.navbar .navbar-brand {
+    color: white;
+}
+
+div .navbar-brand {
+    color: white !important;
+}
+
+div .navbar-brand:hover {
+    color: lightgray !important;
+}
+
+div ul li a {
+    color: white !important;
+}
+
+div ul li a:hover {
+    color: lightgray !important;
+}
+
+span .glyphicon glyphicon-shopping-cart {
+    color: white !important;
+    float: right;
+}
+
+.hm-gradient {
+    background-image: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
+}
+
+.darken-grey-text {
+    color: #2E2E2E;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.wrapper {
+    min-height: 100%;
+}
+
+
+
+/*----footer----*/
+
+footer {
+    width: 100%;
+    background-color: #2d68c6;
+    padding: 60px 0px;
+}
+
+footer nav {
+    float: right;
+}
+
+footer nav ul {
+    margin-right: 40px;
+}
+
+footer nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+    list-style: none;
+}
+
+footer nav ul li a {
+    font-weight: 400;
+    font-size: 14px;
+    color: white;
+}
+
+footer nav ul li a:hover {
+    color: grey;
+}
+
+footer .social-footer {
+    background-color: black;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-instagram {
+    background: deeppink;
+    color: white;
+}
+
+.fa-snapchat {
+    background: yellow;
+    color: white;
+}
+

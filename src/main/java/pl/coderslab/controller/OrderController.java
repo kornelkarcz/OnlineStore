@@ -5,6 +5,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import pl.coderslab.model.Cart;
+import pl.coderslab.model.CartItem;
 
 @Controller
 @RequestMapping("/order")
@@ -12,6 +13,8 @@ public class OrderController {
 
     @Autowired
     private Cart cart;
+
+
 
     @RequestMapping("/")
     public String addOrder(Model model) {
