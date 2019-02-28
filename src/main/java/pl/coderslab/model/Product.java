@@ -40,12 +40,16 @@ public class Product {
     @Pattern(regexp = "\\d{13}")
     private String eanNumber;
 
+    @OneToMany(mappedBy = "product", cascade = {CascadeType.PERSIST, CascadeType.MERGE})
+    private List<ProductInOrder> productInOrders = new ArrayList<>();
+
+
     @ManyToOne
     @JoinColumn(name = "category_id")
     private Category category;
 
-    @ManyToMany(mappedBy = "productList", cascade = {CascadeType.MERGE, CascadeType.PERSIST})
-    private List<Order> orderList = new ArrayList<>();
+//    @ManyToMany(mappedBy = "productList", cascade = {CascadeType.MERGE, CascadeType.PERSIST})
+//    private List<Order> orderList = new ArrayList<>();
 
     public Product() {
     }
@@ -114,6 +118,16 @@ public class Product {
 
     public void setCategory(Category category) {
         this.category = category;
+    }
+
+
+
+    public List<ProductInOrder> getProductInOrders() {
+        return productInOrders;
+    }
+
+    public void setProductInOrders(List<ProductInOrder> productInOrders) {
+        this.productInOrders = productInOrders;
     }
 
     @Override
