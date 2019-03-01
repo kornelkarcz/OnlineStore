@@ -8,20 +8,26 @@
 <body>
 <%@ include file="../header.jsp" %>
 <h1>Edit a category</h1>
-<table>
-    <form:form method="post" modelAttribute="category" action="/category/edit">
 
-        <form:hidden path="id"/>
-        <tr>
-            <td>Name</td>
-            <td><form:input path="name"/></td>
-            <td><form:errors path="name"/></td>
-        </tr>
-        <tr>
-            <td><input type="submit" value="Submit"></td>
-        </tr>
-    </form:form>
-</table>
+<article class="index-table">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+                <form:form method="post" modelAttribute="category" action="/category/edit">
+                    <form:hidden path="id"/>
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <form:input path="name" class="form-control" type="text" name="name"/>
+                    </div>
+                    <button class="btn btn-primary btn-block active">Submit</button>
+                </form:form>
+            </div>
+            <div class="col-sm-4"></div>
+        </div>
+    </div>
+</article>
+
 <%@ include file="../footer.jsp" %>
 </body>
 </html>

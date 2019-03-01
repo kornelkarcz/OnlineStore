@@ -9,7 +9,6 @@
 <%@ include file="../header.jsp" %>
 <h1>Add a category</h1>
 
-
 <article class="index-table">
     <div class="container">
         <div class="row">
@@ -27,7 +26,6 @@
         </div>
     </div>
 </article>
-
 
 <%@ include file="../footer.jsp" %>
 </body>
