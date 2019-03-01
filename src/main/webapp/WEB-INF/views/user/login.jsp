@@ -9,20 +9,25 @@
 <body>
 <%@ include file="../header.jsp" %>
 
-<div class="form-style-10">
-    <h1>Login Now!</h1>
 
-    <form:form method="post" modelAttribute="fake">
-        <div class="section">Login Info</div>
-        <div class="inner-wrap">
-            <label>Email Address <form:input path="email" type="email" name="field1"/></label>
-            <label>Password <form:input path="password" type="password" name="field2"/></label>
-        </div>
+<div id="container">
+    <div id="main">
+        <div class="form-style-10">
+            <h1>Login Now!</h1>
 
-        <div class="button-section">
-            <input type="submit" value="Sign in" name="Sign Up"/>
+            <form:form method="post" modelAttribute="fake">
+                <div class="section">Login Info</div>
+                <div class="inner-wrap">
+                    <label>Email Address <form:input path="email" type="email" name="field1"/></label>
+                    <label>Password <form:input path="password" type="password" name="field2"/></label>
+                </div>
+
+                <div class="button-section">
+                    <input type="submit" value="Sign in" name="Sign Up"/>
+                </div>
+            </form:form>
         </div>
-    </form:form>
+    </div>
 </div>
 <%@ include file="../footer.jsp" %>
 </body>

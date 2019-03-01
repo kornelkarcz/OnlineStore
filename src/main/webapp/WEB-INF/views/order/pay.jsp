@@ -6,13 +6,18 @@
 </head>
 <body>
 <%@ include file="../header.jsp" %>
-<h1>Finish your shopping</h1>
+<div id="container">
+    <div id="main">
+        <h1>Finish your shopping</h1>
 
-<h2>Total sum: ${cart.sum}</h2>
+        <h2>Total sum: ${cart.sum}</h2>
 
-<form>
-    <a href="http://localhost:8080/payment/success">Pay</a>
-</form>
+        <form>
+            <a href="http://localhost:8080/payment/success">Pay</a>
+        </form>
+    </div>
+</div>
+
 <%@ include file="../footer.jsp" %>
 <%--<script src="/js/payment.js" type="text/javascript"></script>--%>
 </body>

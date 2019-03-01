@@ -9,28 +9,32 @@
 </head>
 <body>
 <%@ include file="../header.jsp" %>
-<div>
-    <h1>You are at the checkout</h1>
+<div id="container">
+    <div id="main">
+        <div>
+            <h1>You are at the checkout</h1>
 
-    <c:forEach var="cartItem" items="${cart.cartItems}">
-        <tr>
-            <td>${cartItem.product.id}</td>
-            <td>${cartItem.product.name}</td>
-            <td>${cartItem.product.manufacturer}</td>
-            <td>${cartItem.product.price}</td>
-            <td>${cartItem.quantity}</td>
+            <c:forEach var="cartItem" items="${cart.cartItems}">
+                <tr>
+                    <td>${cartItem.product.id}</td>
+                    <td>${cartItem.product.name}</td>
+                    <td>${cartItem.product.manufacturer}</td>
+                    <td>${cartItem.product.price}</td>
+                    <td>${cartItem.quantity}</td>
+
+                    <br>
+                </tr>
+            </c:forEach>
+
+            Sum: ${cart.sum}
 
             <br>
-        </tr>
-    </c:forEach>
 
-    Sum: ${cart.sum}
+            <button class="pay-button">Pay</button>
+            <button class="cancel-button">Cancel</button>
 
-    <br>
-
-    <button class="pay-button">Pay</button>
-    <button class="cancel-button">Cancel</button>
-
+        </div>
+    </div>
 </div>
 <%@ include file="../footer.jsp" %>
 </body>

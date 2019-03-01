@@ -3,23 +3,28 @@
 <html>
 <head>
     <title>Cart</title>
-    <%@ include file="../dependecies.jsp" %></head>
+    <%@ include file="../dependecies.jsp" %>
+</head>
 <body>
 <%@ include file="../header.jsp" %>
+<div id="container">
+    <div id="main">
 
-<div>
-    <h1>List of items in your cart</h1>
+        <div>
+            <h1>List of items in your cart</h1>
 
-    <c:forEach var="cartItem" items="${cart.cartItems}">
-        <tr>
-            <td>${cartItem}</td>
-            <br>
-        </tr>
-    </c:forEach>
+            <c:forEach var="cartItem" items="${cart.cartItems}">
+                <tr>
+                    <td>${cartItem}</td>
+                    <br>
+                </tr>
+            </c:forEach>
 
-    <button class="button">Continue shopping</button>
-    <button class="checkout">Go to the checkout</button>
+            <button class="button">Continue shopping</button>
+            <button class="checkout">Go to the checkout</button>
 
+        </div>
+    </div>
 </div>
 <%@ include file="../footer.jsp" %>
 </body>

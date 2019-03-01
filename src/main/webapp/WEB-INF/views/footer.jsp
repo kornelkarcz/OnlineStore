@@ -8,8 +8,6 @@
 
 
             </div>
-            <!-- Grid row-->
-
         </div>
     </div>
 

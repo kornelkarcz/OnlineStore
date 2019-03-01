@@ -9,11 +9,10 @@
 <body>
 <%@ include file="header.jsp" %>
 
-<div>
+<div id="container">
+    <div id="main">
 
-
-
-
+    </div>
 </div>
 
 <%@ include file="footer.jsp" %>

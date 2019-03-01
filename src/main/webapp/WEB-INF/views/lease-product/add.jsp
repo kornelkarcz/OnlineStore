@@ -9,47 +9,50 @@
 <body>
 <%@ include file="../header.jsp" %>
 
-<article class="index-table">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-4"></div>
-            <div class="col-sm-4">
-                <form:form method="post" modelAttribute="leaseProduct">
-                    <div class="form-group">
-                        <label for="name">Name:</label>
-                        <form:input path="name" class="form-control" type="text" name="name"/>
+<div id="container">
+    <div id="main">
+        <article class="index-table">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4"></div>
+                    <div class="col-sm-4">
+                        <form:form method="post" modelAttribute="leaseProduct">
+                            <div class="form-group">
+                                <label for="name">Name:</label>
+                                <form:input path="name" class="form-control" type="text" name="name"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="eanNumber">EAN Number:</label>
+                                <form:input path="eanNumber" class="form-control" type="text" name="eanNumber"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="category">Category:</label>
+                                <form:select class="form-control" path="category">
+                                    <form:option value="0" label="Select a category"/>
+                                    <form:options items="${categories}" itemLabel="name" itemValue="id"/>
+                                </form:select>
+                            </div>
+                            <div class="form-group">
+                                <label for="manufacturer">Manufacturer:</label>
+                                <form:input path="manufacturer" class="form-control" type="text" name="manufacturer"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="price">Price:</label>
+                                <form:input path="price" class="form-control" type="text" name="price"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="description">Description:</label>
+                                <form:textarea path="description" class="form-control"/>
+                            </div>
+                            <button class="btn btn-primary btn-block active">Submit</button>
+                        </form:form>
                     </div>
-                    <div class="form-group">
-                        <label for="eanNumber">EAN Number:</label>
-                        <form:input path="eanNumber" class="form-control" type="text" name="eanNumber"/>
-                    </div>
-                    <div class="form-group">
-                        <label for="category">Category:</label>
-                        <form:select class="form-control" path="category">
-                            <form:option value="0" label="Select a category"/>
-                            <form:options items="${categories}" itemLabel="name" itemValue="id"/>
-                        </form:select>
-                    </div>
-                    <div class="form-group">
-                        <label for="manufacturer">Manufacturer:</label>
-                        <form:input path="manufacturer" class="form-control" type="text" name="manufacturer"/>
-                    </div>
-                    <div class="form-group">
-                        <label for="price">Price:</label>
-                        <form:input path="price" class="form-control" type="text" name="price"/>
-                    </div>
-                    <div class="form-group">
-                        <label for="description">Description:</label>
-                        <form:textarea path="description" class="form-control"/>
-                    </div>
-                    <button class="btn btn-primary btn-block active">Submit</button>
-                </form:form>
+                    <div class="col-sm-4"></div>
+                </div>
             </div>
-            <div class="col-sm-4"></div>
-        </div>
+        </article>
     </div>
-</article>
-
+</div>
 
 <%@ include file="../footer.jsp" %>
 </body>
