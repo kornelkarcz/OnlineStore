@@ -9,45 +9,48 @@
 <body>
 <%@ include file="../header.jsp" %>
 
-<table>
-    <form:form method="post" modelAttribute="leaseProduct">
-        <tr>
-            <td>Name</td>
-            <td><form:input path="name"/></td>
-            <td><form:errors path="name"/></td>
-        </tr>
-        <tr>
-            <td>EAN Number</td>
-            <td><form:input path="eanNumber"/></td>
-            <td><form:errors path="eanNumber"/></td>
-        </tr>
-        <tr>
-            <td>Category</td>
-            <td><form:select path="category">
-                <form:option value="0" label="Select a category"/>
-                <form:options items="${categories}" itemLabel="name" itemValue="id"/>
-            </form:select></td>
-            <td><form:errors path="category"/></td>
-        </tr>
-        <tr>
-            <td>Manufacturer</td>
-            <td><form:input path="manufacturer"/></td>
-            <td><form:errors path="manufacturer"/></td>
-        </tr>
-        <tr>
-            <td>Price</td>
-            <td><form:input path="price"/></td>
-            <td><form:errors path="price"/></td>
-        </tr>
-        <tr>
-            <td>Description</td>
-            <td><form:textarea path="description"/></td>
-        </tr>
-        <tr>
-            <td><input type="submit" value="Submit"></td>
-        </tr>
-    </form:form>
-</table>
+<article class="index-table">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+                <form:form method="post" modelAttribute="leaseProduct">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <form:input path="name" class="form-control" type="text" name="name"/>
+                    </div>
+                    <div class="form-group">
+                        <label for="eanNumber">EAN Number:</label>
+                        <form:input path="eanNumber" class="form-control" type="text" name="eanNumber"/>
+                    </div>
+                    <div class="form-group">
+                        <label for="category">Category:</label>
+                        <form:select class="form-control" path="category">
+                            <form:option value="0" label="Select a category"/>
+                            <form:options items="${categories}" itemLabel="name" itemValue="id"/>
+                        </form:select>
+                    </div>
+                    <div class="form-group">
+                        <label for="manufacturer">Manufacturer:</label>
+                        <form:input path="manufacturer" class="form-control" type="text" name="manufacturer"/>
+                    </div>
+                    <div class="form-group">
+                        <label for="price">Price:</label>
+                        <form:input path="price" class="form-control" type="text" name="price"/>
+                    </div>
+                    <div class="form-group">
+                        <label for="description">Description:</label>
+                        <form:textarea path="description" class="form-control"/>
+                    </div>
+                    <button class="btn btn-primary btn-block active">Submit</button>
+                </form:form>
+            </div>
+            <div class="col-sm-4"></div>
+        </div>
+    </div>
+</article>
+
+
 <%@ include file="../footer.jsp" %>
 </body>
 

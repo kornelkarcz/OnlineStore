@@ -7,8 +7,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f37ef922-c4a0-4c2e-b178-5c04cafab6d8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/header.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/category/add.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/category/add.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/lease-product/add.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/lease-product/add.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/product/add.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/product/add.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/add-address.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/add-address.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -19,83 +21,70 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/register.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="26" lean-forward="true" selection-start-line="11" selection-end-line="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/header.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="88" selection-start-line="1" selection-start-column="88" selection-end-line="1" selection-end-column="88" />
-              <folding>
-                <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#nav#0;n#header#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/login.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/product/all.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="19" lean-forward="true" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/product/add.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="945">
-              <caret line="63" lean-forward="true" selection-start-line="63" selection-end-line="63" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pl/coderslab/service/LeaseProductService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/css/styles.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" column="29" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/register.jsp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="165">
+                  <caret line="11" column="26" lean-forward="true" selection-start-line="11" selection-end-line="12" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/lease-product/add.jsp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="310">
+                  <caret line="25" column="44" lean-forward="true" selection-start-line="25" selection-start-column="44" selection-end-line="25" selection-end-column="44" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/webapp/css/styles.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="330">
+                  <caret line="22" column="29" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/main/java/pl/coderslab/model/Address.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="480">
+                  <caret line="42" column="26" selection-start-line="42" selection-start-column="19" selection-end-line="42" selection-end-column="26" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/product/add.jsp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="643">
+                  <caret line="56" column="53" selection-start-line="56" selection-start-column="53" selection-end-line="56" selection-end-column="53" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/add-address.jsp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="469">
+                  <caret line="39" column="26" selection-start-line="39" selection-start-column="26" selection-end-line="39" selection-end-column="26" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -174,24 +163,24 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/dependecies.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/order/pay.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/order/summary.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/category/add.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/category/all.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/category/edit.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/product/edit.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/add-address.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/myaccount.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/cart/cartItems.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/product/all.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/lease-product/all.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/lease-product/add.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/lease-product/edit.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/register.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/login.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/pl/coderslab/service/LeaseProductService.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/product/add.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/css/styles.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/header.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/category/add.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/lease-product/add.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/product/add.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/add-address.jsp" />
       </list>
     </option>
   </component>
@@ -445,7 +434,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551397105843" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551398398937" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -556,12 +545,12 @@
       <workItem from="1551037359931" duration="14402000" />
       <workItem from="1551094266172" duration="19493000" />
       <workItem from="1551170397957" duration="75805000" />
-      <workItem from="1551344171043" duration="33332000" />
+      <workItem from="1551344171043" duration="34408000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="166714000" />
+    <option name="totallyTimeSpent" value="167790000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -576,7 +565,7 @@
     <frame x="0" y="23" width="1440" height="812" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25679544" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.25679544" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Persistence" order="3" side_tool="true" />
@@ -591,7 +580,7 @@
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info active="true" anchor="bottom" id="TODO" order="6" visible="true" weight="0.32916668" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32916668" />
       <window_info anchor="bottom" id="Application Servers" order="7" weight="0.32916668" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
@@ -656,13 +645,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.3.7.RELEASE/spring-webmvc-4.3.7.RELEASE.jar!/org/springframework/web/servlet/mvc/method/AbstractHandlerMethodAdapter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="37" selection-start-line="37" selection-end-line="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.3.7.RELEASE/spring-webmvc-4.3.7.RELEASE.jar!/org/springframework/web/servlet/mvc/method/annotation/RequestMappingHandlerAdapter.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="164">
@@ -974,13 +956,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/category/add.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="23" column="35" selection-start-line="23" selection-end-line="23" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/category/all.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="301">
@@ -999,13 +974,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="44" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/add-address.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="49" column="35" selection-start-line="49" selection-end-line="49" selection-end-column="35" />
         </state>
       </provider>
     </entry>
@@ -1030,13 +998,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/lease-product/add.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="538">
-          <caret line="50" column="35" selection-start-line="50" selection-start-column="35" selection-end-line="50" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/lease-product/edit.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="553">
@@ -1048,13 +1009,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/register.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="26" lean-forward="true" selection-start-line="11" selection-end-line="12" />
         </state>
       </provider>
     </entry>
@@ -1086,10 +1040,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/product/add.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/header.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="945">
-          <caret line="63" lean-forward="true" selection-start-line="63" selection-end-line="63" />
+        <state relative-caret-position="-26">
+          <caret line="1" column="88" selection-start-line="1" selection-start-column="88" selection-end-line="1" selection-end-column="88" />
+          <folding>
+            <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#nav#0;n#header#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/register.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="26" lean-forward="true" selection-start-line="11" selection-end-line="12" />
         </state>
       </provider>
     </entry>
@@ -1100,13 +1064,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/header.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/category/add.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="88" selection-start-line="1" selection-start-column="88" selection-end-line="1" selection-end-column="88" />
-          <folding>
-            <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#nav#0;n#header#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="135">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/lease-product/add.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="25" column="44" lean-forward="true" selection-start-line="25" selection-start-column="44" selection-end-line="25" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/product/add.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="643">
+          <caret line="56" column="53" selection-start-line="56" selection-start-column="53" selection-end-line="56" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/add-address.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="469">
+          <caret line="39" column="26" selection-start-line="39" selection-start-column="26" selection-end-line="39" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/coderslab/model/Address.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="42" column="26" selection-start-line="42" selection-start-column="19" selection-end-line="42" selection-end-column="26" />
         </state>
       </provider>
     </entry>

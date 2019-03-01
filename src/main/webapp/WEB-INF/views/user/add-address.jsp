@@ -7,46 +7,46 @@
 </head>
 <body>
 <%@ include file="../header.jsp" %>
-<h1>Add your address</h1>
 
-<form:form method="post" modelAttribute="address">
-    <table>
-        <tr>
-            <td>Street name</td>
-            <td><form:input path="streetName"/></td>
-            <td><form:errors path="streetName"/></td>
-        </tr>
-        <tr>
-            <td>House number</td>
-            <td><form:input path="houseNumber"/></td>
-            <td><form:errors path="houseNumber"/></td>
-        </tr>
-        <tr>
-            <td>Flat number</td>
-            <td><form:input path="flatNumber"/></td>
-            <td><form:errors path="flatNumber"/></td>
-        </tr>
-        <tr>
-            <td>Postal code</td>
-            <td><form:input path="postalCode"/></td>
-            <td><form:errors path="postalCode"/></td>
-        </tr>
-        <tr>
-            <td>City</td>
-            <td><form:input path="city"/></td>
-            <td><form:errors path="city"/></td>
-        </tr>
-        <tr>
-            <td>Country</td>
-            <td><form:input path="country"/></td>
-            <td><form:errors path="country"/></td>
-        </tr>
+<article class="index-table">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+                <form:form method="post" modelAttribute="address">
+                    <div class="form-group">
+                        <label for="name">Street name:</label>
+                        <form:input path="streetName" class="form-control" type="text" name="streetName"/>
+                    </div>
+                    <div class="form-group">
+                        <label for="houseNumber">House number:</label>
+                        <form:input path="houseNumber" class="form-control" type="text" name="houseNumber"/>
+                    </div>
+                    <div class="form-group">
+                        <label for="flatNumber">Flat number:</label>
+                        <form:input path="flatNumber" class="form-control" type="text" name="flatNumber"/>
+                    </div>
+                    <div class="form-group">
+                        <label for="postalCode">Postal code:</label>
+                        <form:input path="postalCode" class="form-control" type="text" name="postalCode"/>
+                    </div>
+                    <div class="form-group">
+                        <label for="city">City:</label>
+                        <form:input path="city" class="form-control" type="text" name="city"/>
+                    </div>
+                    <div class="form-group">
+                        <label for="country">City:</label>
+                        <form:input path="country" class="form-control" type="text" name="country"/>
+                    </div>
+                    <button class="btn btn-primary btn-block active">Submit</button>
+                </form:form>
+            </div>
+            <div class="col-sm-4"></div>
+        </div>
+    </div>
+</article>
 
-        <tr>
-            <td><input type="submit" value="Submit"></td>
-        </tr>
-    </table>
-</form:form>
+
 <%@ include file="../footer.jsp" %>
 </body>
 </html>
