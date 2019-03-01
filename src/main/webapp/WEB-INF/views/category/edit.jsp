@@ -12,7 +12,7 @@
     <div id="main">
         <h1>Edit a category</h1>
 
-        <article class="index-table">
+        <article class="index-form">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-4"></div>

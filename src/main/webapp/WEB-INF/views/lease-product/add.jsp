@@ -11,7 +11,7 @@
 
 <div id="container">
     <div id="main">
-        <article class="index-table">
+        <article class="index-form">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-4"></div>

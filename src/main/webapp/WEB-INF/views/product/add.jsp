@@ -13,7 +13,7 @@
 
 <div id="container>">
     <div id="main">
-        <article class="index-table">
+        <article class="index-form">
             <div class="container">
                 <div class="row">
                     <%--sm-4 chodzi o rozmiar tabletu lub tel, bootrap ma 12 kolumn, w ten sposob dzielimy go na rowne 3 czesci
