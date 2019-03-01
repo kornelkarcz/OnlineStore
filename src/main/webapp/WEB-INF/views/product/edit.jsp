@@ -17,6 +17,7 @@
                 <div class="row">
                     <div class="col-sm-4"></div>
                     <div class="col-sm-4">
+                        <h2>Edit a product</h2>
                         <form:form method="post" modelAttribute="product" action="product/edit">
                             <form:hidden path="id"/>
                             <div class="form-group">

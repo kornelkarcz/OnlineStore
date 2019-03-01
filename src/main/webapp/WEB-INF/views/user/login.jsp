@@ -12,21 +12,29 @@
 
 <div id="container">
     <div id="main">
-        <div class="form-style-10">
-            <h1>Login Now!</h1>
+        <article class="index-form">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4"></div>
+                    <div class="col-sm-4">
+                        <h2>Log in</h2>
+                        <form:form method="post" modelAttribute="fake">
+                            <div class="form-group">
+                                <label for="email">Email:</label>
+                                <form:input path="email" class="form-control" type="text" name="email"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Password:</label>
+                                <form:input path="password" class="form-control" type="text" name="password"/>
+                            </div>
 
-            <form:form method="post" modelAttribute="fake">
-                <div class="section">Login Info</div>
-                <div class="inner-wrap">
-                    <label>Email Address <form:input path="email" type="email" name="field1"/></label>
-                    <label>Password <form:input path="password" type="password" name="field2"/></label>
+                            <button class="btn btn-primary btn-block active">Submit</button>
+                        </form:form>
+                    </div>
+                    <div class="col-sm-4"></div>
                 </div>
-
-                <div class="button-section">
-                    <input type="submit" value="Sign in" name="Sign Up"/>
-                </div>
-            </form:form>
-        </div>
+            </div>
+        </article>
     </div>
 </div>
 <%@ include file="../footer.jsp" %>

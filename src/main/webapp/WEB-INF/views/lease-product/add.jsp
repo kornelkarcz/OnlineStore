@@ -16,6 +16,7 @@
                 <div class="row">
                     <div class="col-sm-4"></div>
                     <div class="col-sm-4">
+                        <h2>Add a product to lease</h2>
                         <form:form method="post" modelAttribute="leaseProduct">
                             <div class="form-group">
                                 <label for="name">Name:</label>

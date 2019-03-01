@@ -15,6 +15,7 @@
                 <div class="row">
                     <div class="col-sm-4"></div>
                     <div class="col-sm-4">
+                        <h2>Provide postal info</h2>
                         <form:form method="post" modelAttribute="address">
                             <div class="form-group">
                                 <label for="name">Street name:</label>
