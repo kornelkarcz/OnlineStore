@@ -6,6 +6,7 @@
 <head>
     <title>All products</title>
     <%@ include file="../dependecies.jsp" %>
+    <script src="/js/action.js"></script>
 
 </head>
 <body>
@@ -36,9 +37,7 @@
                                 <input id="quantity" type="number" min="0" value=""/>
                             </td>
                             <td>
-                                    <%--<a id="link" href="http://localhost:8080/cart/add-to-cart/${product.id}/">--%>
                                 <button class="button">Add to cart</button>
-                                    <%--</a>--%>
                             </td>
                             <td><a href="http://localhost:8080/product/edit/${product.id}">
                                 <button>Edit</button>

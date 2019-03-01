@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
 
-    var button = document.getElementById("btn btn-success");
+    var button = document.querySelector(".btn");
     console.log(button);
 
 

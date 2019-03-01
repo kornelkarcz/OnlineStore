@@ -3,9 +3,7 @@ package pl.coderslab.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.bind.annotation.SessionAttributes;
+import org.springframework.web.bind.annotation.*;
 import pl.coderslab.model.Order;
 import pl.coderslab.model.Payment;
 import pl.coderslab.model.User;
@@ -30,7 +28,7 @@ public class PaymentController {
     @Autowired
     private OrderService orderService;
 
-    @RequestMapping("/success")
+    @GetMapping("/success")
     @ResponseBody
     public String savePayment(HttpSession session) {
 
@@ -42,6 +40,6 @@ public class PaymentController {
         payment.setPaymentDate(LocalDateTime.now());
         paymentService.savePayment(payment);
 
-        return "You have paid for the order, congras!";
+        return "You have paid for the order, congrats!";
     }
 }

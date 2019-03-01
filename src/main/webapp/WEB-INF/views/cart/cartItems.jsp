@@ -4,6 +4,8 @@
 <head>
     <title>Cart</title>
     <%@ include file="../dependecies.jsp" %>
+    <script src="/js/cartItem.js"></script>
+
 </head>
 <body>
 <%@ include file="../header.jsp" %>
