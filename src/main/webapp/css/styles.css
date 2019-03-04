@@ -11,6 +11,8 @@ html, body {
 
 #container {
     min-height: 100%;
+    background-color: #f3f3f3;
+
 
 }
 
@@ -65,7 +67,63 @@ html, body {
 }
 
 header {
-    margin-bottom: 75px;
+    margin-bottom: 30px;
 }
 
+.main-container {
+    padding-top: 50px;
+}
+
+.index-intro {
+    width: 100%;
+    background-color: #f3f3f3;
+}
+
+.index-intro .jumbotron {
+    padding: 100px 60px;
+    margin: 0px;
+    background-image: url('/images/image.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.index-intro .jumbotron h1 {
+    font-size: 30px;
+    color: #f3f3f3;
+}
+
+.index-intro .jumbotron p {
+    font-size: 16px;
+    color: #f3f3f3;
+}
+
+.main-container {
+    background-color: #f3f3f3;
+}
+
+.index-table {
+    width: 100%;
+    background-color: #f3f3f3;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.index-table .table th {
+    text-align: center;
+}
+
+.index-table .table td {
+    text-align: center;
+}
+
+.table-container {
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+#xd {
+    padding-left: 120px;
+    width: fit-content;
+
+}
 

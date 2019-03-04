@@ -14,21 +14,28 @@
         <div>
             <h1>You are at the checkout</h1>
 
-            <c:forEach var="cartItem" items="${cart.cartItems}">
-                <tr>
-                    <td>${cartItem.product.id}</td>
-                    <td>${cartItem.product.name}</td>
-                    <td>${cartItem.product.manufacturer}</td>
-                    <td>${cartItem.product.price}</td>
-                    <td>${cartItem.quantity}</td>
+            <div class="table-container">
+                <table class="table table-condensed table-hover">
+                    <tr class="info">
+                        <th>Name</th>
+                        <th>Manufacturer</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                    </tr>
+                    <c:forEach var="cartItem" items="${cart.cartItems}">
+                        <tr>
+                            <td>${cartItem.product.name}</td>
+                            <td>${cartItem.product.manufacturer}</td>
+                            <td>${cartItem.product.price}</td>
+                            <td>${cartItem.quantity}</td>
 
-                    <br>
-                </tr>
-            </c:forEach>
+                            <br>
+                        </tr>
+                    </c:forEach>
+                </table>
+            </div>
 
-            Sum: ${cart.sum}
-
-            <br>
+            Sum: ${cart.sum}<br>
 
             <button class="pay-button">Pay</button>
             <button class="cancel-button">Cancel</button>

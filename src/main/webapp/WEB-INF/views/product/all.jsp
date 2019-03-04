@@ -14,18 +14,20 @@
 
 <div id="container">
     <div id="main">
-        <div>
-            <div>
-                <table>
-                    <thead>
-                    <th>Id</th>
-                    <th>Name</th>
-                    <th>Category</th>
-                    <th>Manufacturer</th>
-                    <th>Price</th>
-                    <th>Quantity</th>
-                    <th colspan="3">Actions</th>
-                    </thead>
+
+
+        <article class="index-table">
+            <div class="table-container">
+                <table class="table table-condensed table-hover">
+                    <tr class="info">
+                        <th>Id</th>
+                        <th>Name</th>
+                        <th>Category</th>
+                        <th>Manufacturer</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th colspan="3">Actions</th>
+                    </tr>
                     <c:forEach items="${products}" var="product">
                         <tr class="itemRow">
                             <td>${product.id}</td>
@@ -48,12 +50,22 @@
                             </a></td>
                         </tr>
                     </c:forEach>
+
                 </table>
             </div>
-        </div>
-        <div>
-            <a href="/product/add">Add next product</a>
-        </div>
+            <div id="xd">
+                <a class="btn btn-primary btn-block active" href="/product/add">
+                    Add next product
+                </a>
+            </div>
+
+            <%--<div id="xd1">--%>
+                <%--<a class="btn btn-primary btn-block active" href="/product/add">--%>
+                    <%--Add to cart--%>
+                <%--</a>--%>
+            <%--</div>--%>
+        </article>
+
     </div>
 </div>
 
