@@ -89,7 +89,6 @@ public class UserController {
             user.setAddress(address);
             userService.registerUser(user);
 
-
             return "redirect:/";
         }
     }

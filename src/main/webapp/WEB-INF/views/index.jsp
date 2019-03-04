@@ -11,7 +11,7 @@
 <%--<%@ include file="header.jsp" %>--%>
 
 <c:choose>
-    <c:when test="${sessionScope.logged}">
+    <c:when test="${sessionScope.logged != null}">
         <%@include file="loggedHeader.jsp"%>
     </c:when>
     <c:otherwise>
