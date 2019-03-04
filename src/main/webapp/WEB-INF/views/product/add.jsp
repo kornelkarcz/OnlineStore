@@ -59,8 +59,6 @@
     </div>
 </div>
 
-<%--TODO Zapytać się Artura o sposób, żeby nie nachodziły na siebie elementy/Slash ogarnac to na youtubie--%>
-<%--TODO Zapytać się o header/section nad formularzem--%>
 <%@ include file="../footer.jsp" %>
 </body>
 </html>
