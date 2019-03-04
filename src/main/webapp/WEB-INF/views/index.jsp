@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!doctype html>
 <html lang="en">
@@ -7,7 +8,16 @@
 
 </head>
 <body>
-<%@ include file="header.jsp" %>
+<%--<%@ include file="header.jsp" %>--%>
+
+<c:choose>
+    <c:when test="${sessionScope.logged}">
+        <%@include file="loggedHeader.jsp"%>
+    </c:when>
+    <c:otherwise>
+        <%@include file="header.jsp"%>
+    </c:otherwise>
+</c:choose>
 
 <section class="main-container">
 
