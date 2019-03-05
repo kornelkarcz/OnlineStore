@@ -9,6 +9,7 @@ import pl.coderslab.model.User;
 import pl.coderslab.service.UserService;
 import pl.coderslab.utils.BCrypt;
 
+import javax.servlet.http.HttpSession;
 import java.util.List;
 
 @Controller
@@ -45,5 +46,13 @@ public class LoginController {
 
         return "redirect:/";
 
+    }
+
+    @GetMapping("logout")
+    public String logOut(HttpSession session) {
+
+        session.invalidate();
+
+        return "login/logout";
     }
 }

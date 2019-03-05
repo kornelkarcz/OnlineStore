@@ -69,14 +69,4 @@ public class UserController {
             return "redirect:/";
         }
     }
-
-    @RequestMapping("/logout")
-    public String logOut(HttpServletRequest request, HttpSession session, Model model) {
-
-        session.invalidate();
-
-        return "user/logout";
-    }
-
-
 }
