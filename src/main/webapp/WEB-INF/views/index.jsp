@@ -8,7 +8,6 @@
 
 </head>
 <body>
-<%--<%@ include file="header.jsp" %>--%>
 
 <c:choose>
     <c:when test="${sessionScope.logged != null}">

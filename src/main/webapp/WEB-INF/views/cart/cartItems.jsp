@@ -8,7 +8,16 @@
 
 </head>
 <body>
-<%@ include file="../header.jsp" %>
+
+<c:choose>
+    <c:when test="${sessionScope.logged != null}">
+        <%@include file="../loggedHeader.jsp"%>
+    </c:when>
+    <c:otherwise>
+        <%@include file="../header.jsp"%>
+    </c:otherwise>
+</c:choose>
+
 <div id="container">
     <div id="main">
 
