@@ -9,4 +9,9 @@ public interface UserRepository extends JpaRepository<User, Long> {
 
     @Query("update User u set u.address.id = ?1 where u.id = ?2")
     public void assignAddressToUser(Long addressId, Long userId);
+
+
+    public User findUserByEmail(String email);
+
+
 }

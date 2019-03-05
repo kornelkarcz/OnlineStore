@@ -12,6 +12,7 @@ import pl.coderslab.service.AddressService;
 import pl.coderslab.service.UserService;
 import pl.coderslab.utils.BCrypt;
 
+import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 import javax.validation.Valid;
 import java.util.List;
@@ -51,6 +52,9 @@ public class UserController {
 
     @PostMapping("/login")
     public String logUser(@ModelAttribute FakeUser fakeUser, Model model) {
+
+
+//          1.Opcja logowania
         List<User> userList = userService.findAll();
         User logged = new User();
         for (User user1 : userList) {
@@ -64,6 +68,7 @@ public class UserController {
             }
         }
         model.addAttribute("logged", logged);
+
         return "redirect:/";
     }
 
@@ -91,6 +96,14 @@ public class UserController {
 
             return "redirect:/";
         }
+    }
+
+    @RequestMapping("/logout")
+    public String logOut(HttpServletRequest request, HttpSession session, Model model) {
+
+        session.invalidate();
+
+        return "user/logout";
     }
 
 

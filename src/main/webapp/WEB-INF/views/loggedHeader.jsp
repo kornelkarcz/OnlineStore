@@ -18,7 +18,7 @@
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="http://localhost:8080/user/myaccount">My account</a></li>
-                    <li><a href="http://localhost:8080/user/login">Log out</a></li>
+                    <li><a href="http://localhost:8080/user/logout  ">Log out</a></li>
                     <li><a href="http://localhost:8080/cart/"><span class="glyphicon glyphicon-shopping-cart"></span>
                         Your Cart</a></li>
                 </ul>

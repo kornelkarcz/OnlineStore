@@ -36,7 +36,6 @@ public class User {
 
     private boolean superAdmin;
 
-    private boolean enable;
 
     @OneToOne
     @JoinColumn(name = "address_id")
@@ -119,6 +118,8 @@ public class User {
     public void setAddress(Address address) {
         this.address = address;
     }
+
+
 
     public List<Order> getOrderList() {
         return orderList;
