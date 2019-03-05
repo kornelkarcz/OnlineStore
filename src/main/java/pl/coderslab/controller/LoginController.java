@@ -23,7 +23,7 @@ public class LoginController {
     @GetMapping("login")
     public String logIn(Model model) {
         model.addAttribute("fake", new FakeUser());
-        return "";
+        return "/login/login";
     }
 
     @PostMapping("login")

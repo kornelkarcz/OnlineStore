@@ -8,7 +8,6 @@
   <component name="ChangeListManager">
     <list default="true" id="f37ef922-c4a0-4c2e-b178-5c04cafab6d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/coderslab/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/coderslab/controller/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/coderslab/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/coderslab/controller/UserController.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -22,29 +21,11 @@
     <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/add-address.jsp">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="60">
-                  <caret line="4" column="6" lean-forward="true" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/order/pay.jsp">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="40">
-                  <caret line="20" column="19" lean-forward="true" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/java/pl/coderslab/controller/LoginController.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="615">
-                  <caret line="45" column="28" selection-start-line="45" selection-start-column="28" selection-end-line="45" selection-end-column="28" />
+                <state relative-caret-position="196">
+                  <caret line="26" column="5" lean-forward="true" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -59,8 +40,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/java/pl/coderslab/controller/UserController.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="464">
-                  <caret line="69" column="28" lean-forward="true" selection-start-line="55" selection-start-column="8" selection-end-line="69" selection-end-column="28" />
+                <state relative-caret-position="398">
+                  <caret line="45" selection-start-line="45" selection-end-line="45" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -143,7 +124,6 @@
         <option value="$PROJECT_DIR$/src/main/webapp/css/styles.css" />
         <option value="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" />
         <option value="$PROJECT_DIR$/src/main/java/pl/coderslab/filter/LoginFilter.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/header.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/loggedHeader.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/pl/coderslab/repository/UserRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/coderslab/service/UserService.java" />
@@ -168,6 +148,7 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/myaccount.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/register.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/pl/coderslab/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/header.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/pl/coderslab/controller/LoginController.java" />
       </list>
     </option>
@@ -407,16 +388,6 @@
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="login" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="OnlineStore" type="b2602c69:ProjectViewProjectNode" />
-              <item name="OnlineStore" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
               <item name="order" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -448,7 +419,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551811599575" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551811898892" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -567,12 +538,12 @@
       <workItem from="1551170397957" duration="75805000" />
       <workItem from="1551344171043" duration="56674000" />
       <workItem from="1551713525524" duration="1127000" />
-      <workItem from="1551716131721" duration="14625000" />
+      <workItem from="1551716131721" duration="14867000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="205808000" />
+    <option name="totallyTimeSpent" value="206050000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -584,6 +555,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="812" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.2639485" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -596,7 +568,7 @@
       <window_info id="Web" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32916668" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32916668" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -888,13 +860,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/header.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="91" lean-forward="true" selection-start-line="9" selection-start-column="70" selection-end-line="9" selection-end-column="91" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pl/coderslab/model/FakeUser.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -1013,13 +978,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login/login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="1" column="64" selection-start-line="1" selection-start-column="64" selection-end-line="1" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/myaccount.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -1057,18 +1015,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pl/coderslab/controller/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="464">
-          <caret line="69" column="28" lean-forward="true" selection-start-line="55" selection-start-column="8" selection-end-line="69" selection-end-column="28" />
+        <state relative-caret-position="398">
+          <caret line="45" selection-start-line="45" selection-end-line="45" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/header.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="558">
+          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pl/coderslab/controller/LoginController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="615">
-          <caret line="45" column="28" selection-start-line="45" selection-start-column="28" selection-end-line="45" selection-end-column="28" />
+        <state relative-caret-position="196">
+          <caret line="26" column="5" lean-forward="true" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
