@@ -33,7 +33,7 @@
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="http://localhost:8080/user/register">Register</a></li>
-                    <li><a href="http://localhost:8080/user/login">Login</a></li>
+                    <li><a href="http://localhost:8080/login">Login</a></li>
                     <li><a href="http://localhost:8080/cart/"><span class="glyphicon glyphicon-shopping-cart"></span>
                         Your Cart</a></li>
                 </ul>

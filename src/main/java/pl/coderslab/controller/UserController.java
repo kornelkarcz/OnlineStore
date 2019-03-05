@@ -44,34 +44,6 @@ public class UserController {
         return "/index";
     }
 
-    @GetMapping("/login")
-    public String loginPanel(Model model) {
-        model.addAttribute("fake", new FakeUser());
-        return "user/login";
-    }
-
-    @PostMapping("/login")
-    public String logUser(@ModelAttribute FakeUser fakeUser, Model model) {
-
-
-//          1.Opcja logowania
-        List<User> userList = userService.findAll();
-        User logged = new User();
-        for (User user1 : userList) {
-            if (fakeUser.getEmail().equals(user1.getEmail())) {
-                if (BCrypt.checkpw(fakeUser.getPassword(), user1.getPassword())) {
-                    logged = user1;
-                    break;
-                } else {
-                    return "redirect:/login";
-                }
-            }
-        }
-        model.addAttribute("logged", logged);
-
-        return "redirect:/";
-    }
-
     @RequestMapping("/myaccount")
     public String displayMyAccount() {
         return "user/myaccount";
