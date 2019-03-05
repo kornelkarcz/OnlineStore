@@ -31,6 +31,7 @@
                         <th>Manufacturer</th>
                         <th>Price</th>
                         <th>Quantity</th>
+                        <th colspan="1">Actions</th>
                     </tr>
                     <c:forEach var="cartItem" items="${cart.cartItems}">
                         <tr>
@@ -38,6 +39,11 @@
                             <td>${cartItem.product.manufacturer}</td>
                             <td>${cartItem.product.price}</td>
                             <td>${cartItem.quantity}</td>
+                            <td>
+                                <a href="http://localhost:8080/cart/remove/${cartItem.product.id}">
+                                    <button>Remove from cart</button>
+                                </a>
+                            </td>
                             <br>
                         </tr>
                     </c:forEach>

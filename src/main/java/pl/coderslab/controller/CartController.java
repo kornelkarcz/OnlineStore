@@ -9,6 +9,7 @@ import pl.coderslab.model.CartItem;
 import pl.coderslab.model.Product;
 import pl.coderslab.service.ProductService;
 
+import java.math.BigDecimal;
 import java.util.List;
 
 @Controller
@@ -58,6 +59,33 @@ public class CartController {
         model.addAttribute("cart", cart);
 
         return "cart/cartItems";
+    }
+
+    @GetMapping("/remove/{id}")
+    public String removeFromCart(@PathVariable Long id, Model model) {
+
+        Product product = productService.getById(id);
+        List<CartItem> cartItems = cart.getCartItems();
+
+        CartItem fakeCartItem = new CartItem(product);
+
+        if (cartItems.contains(fakeCartItem)) {
+
+            model.addAttribute("cart", cart);
+
+            //Nie przyjmuje tutaj ilości jaka kasujemy
+            BigDecimal amountToSubtract = product.getPrice().multiply(BigDecimal.valueOf(fakeCartItem.getQuantity()));
+            System.out.println(amountToSubtract);
+            cart.setSum(cart.getSum().subtract(amountToSubtract));
+
+            cartItems.remove(fakeCartItem);
+
+
+        } else {
+            return "redirect:/";
+        }
+
+        return "redirect:/cart/";
     }
 
 }
