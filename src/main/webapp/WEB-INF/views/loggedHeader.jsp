@@ -17,7 +17,24 @@
                     <li><a href="?">Contact</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="http://localhost:8080/user/myaccount">My account</a></li>
+
+
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown">
+                    <span class="caret">
+
+                    </span>&nbsp;
+                            My account
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="active"><a href=http://localhost:8080/user/myaccount">Account details</a></li>
+                            <li class="active"><a href="#">Add address</a></li>
+                            <li class="active"><a href="#">My orders</a></li>
+                            <li class="active"><a href="#">My payments</a></li>
+                        </ul>
+                    </li>
+
+
                     <li><a href="http://localhost:8080/logout  ">Log out</a></li>
                     <li><a href="http://localhost:8080/cart/"><span class="glyphicon glyphicon-shopping-cart"></span>
                         Your Cart</a></li>

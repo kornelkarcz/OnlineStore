@@ -18,13 +18,23 @@
 
 <%
     session.invalidate();
-//    response.sendRedirect("http://localhost:8080");
 %>
+
+<script>
+    var timer = setTimeout(function() {
+        window.location='http://localhost:8080'
+    }, 3000);
+</script>
 
 <section class="main-container">
     <article class="index-intro">
-        <p>You have been logged out hopefully</p> <br>
-        <a href="http://localhost:8080">Homepage</a>
+
+       <div class="col-sm-2"></div>
+       <div class="col-sm-8">
+           <img class="img-responsive img-rounded" src="/images/image4.jpg" style="size: auto">
+       </div>
+       <div class="col-sm-2"></div>
+
     </article>
 </section>
 
