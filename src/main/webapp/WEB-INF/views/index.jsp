@@ -56,13 +56,6 @@
     </article>
 </section>
 
-
-<div id="container">
-    <div id="main">
-
-    </div>
-</div>
-
 <%@ include file="footer.jsp" %>
 
 </body>

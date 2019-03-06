@@ -9,22 +9,6 @@ html, body {
 
 }
 
-#container {
-    min-height: 100%;
-    background-color: #f3f3f3;
-
-
-}
-
-#main {
-    overflow: auto;
-    padding-bottom: 50px;
-    /*Attention, zobaczyć jak reaguje przy jakimś contencie na stronie*/
-    height: 100%;
-    background-color: #f3f3f3;
-
-}
-
 .navbar-default .navbar-nav > li > a {
     color: white !important;
 }
@@ -43,7 +27,7 @@ html, body {
 
 #footer {
     height: 50px;
-    margin-top: -100px;
+    /*margin-top: -100px;*/
     position: relative;
     /*position: fixed;*/
     background-color: #204d74;
@@ -73,10 +57,17 @@ header {
 
 .main-container {
     padding-top: 50px;
+    min-height: 100%;
+    background-color: #f3f3f3;
+
 }
 
 .index-intro {
     width: 100%;
+    background-color: #f3f3f3;
+    overflow: auto;
+    padding-bottom: 50px;
+    height: 100%;
     background-color: #f3f3f3;
 }
 
