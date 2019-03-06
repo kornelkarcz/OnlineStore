@@ -11,10 +11,10 @@
 
 <c:choose>
     <c:when test="${sessionScope.logged != null}">
-        <%@include file="loggedHeader.jsp"%>
+        <%@include file="loggedHeader.jsp" %>
     </c:when>
     <c:otherwise>
-        <%@include file="header.jsp"%>
+        <%@include file="header.jsp" %>
     </c:otherwise>
 </c:choose>
 
@@ -26,12 +26,30 @@
                 <div class="row">
                     <div class="col-sm-6"></div>
                     <div class="col-sm-6">
-                        <h1>Frontend <3</h1>
+                        <h1>Welcome to OnlineStore</h1>
                         <p>
-                            I had a dream. Robots were everywhere, shootin' lasers and shit ~ Martin Luther King
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sit amet dolor tortor. Morbi
+                            eu erat vitae dolor ullamcorper rutrum. Sed non enim suscipit, sollicitudin ante non,
+                            sodales est. Nam sit amet turpis elementum odio sollicitudin consectetur sit amet tempus
+                            felis. Maecenas mollis lorem sit amet massa vestibulum, eget feugiat ligula blandit.
                         </p>
                     </div>
-
+                </div>
+            </div>
+            <div>
+                <div class="div-gallery">
+                    <div class="col-sm-6 gallery1" style="padding: 10px">
+                        <a href="#">
+                            <img class="img-responsive img-rounded" src="/images/image2.jpg"
+                                 style="height: 400px; width: 550px">
+                        </a>
+                    </div>
+                    <div class="col-sm-6 gallery2" style="padding: 10px">
+                        <a href="http://localhost:8080/product/all">
+                            <img class="img-responsive img-rounded" src="/images/image3.jpg"
+                                 style="height: 400px; width: 550px">
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>

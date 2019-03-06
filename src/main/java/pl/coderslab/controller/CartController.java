@@ -71,8 +71,6 @@ public class CartController {
 
         if (cartItems.contains(fakeCartItem)) {
 
-//            model.addAttribute("cart", cart);
-
             BigDecimal amountToSubtract = product.getPrice().multiply(BigDecimal.valueOf(quantity));
             cart.setSum(cart.getSum().subtract(amountToSubtract));
             cartItems.remove(fakeCartItem);
