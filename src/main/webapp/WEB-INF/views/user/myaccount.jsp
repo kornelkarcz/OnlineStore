@@ -9,19 +9,19 @@
 
 <c:choose>
     <c:when test="${sessionScope.logged != null}">
-        <%@include file="../loggedHeader.jsp"%>
+        <%@include file="../loggedHeader.jsp" %>
     </c:when>
     <c:otherwise>
-        <%@include file="../header.jsp"%>
+        <%@include file="../header.jsp" %>
     </c:otherwise>
 </c:choose>
 
-<div id="container">
-    <div id="main">
+<section class="main-container">
+    <article class="index-intro">
 
 
-    </div>
-</div>
+    </article>
+</section>
 <%@ include file="../footer.jsp" %>
 </body>
 </html>

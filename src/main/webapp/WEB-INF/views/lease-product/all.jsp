@@ -16,8 +16,9 @@
     </c:otherwise>
 </c:choose>
 
-<div id="container">
-    <div id="main">
+<section class="main-container">
+    <article class="index-intro">
+
 
         <table border="1px" cellpadding="10">
             <thead>
@@ -45,8 +46,8 @@
         </table>
 
         <a href="/lease-product/add">Add next lease product</a>
-    </div>
-</div>
+    </article>
+</section>
 
 <%@ include file="../footer.jsp" %>
 </body>

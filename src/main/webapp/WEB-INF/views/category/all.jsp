@@ -13,8 +13,11 @@
     <c:otherwise>
         <%@include file="../header.jsp"%>
     </c:otherwise>
-</c:choose><div id="container">
-    <div id="main">
+</c:choose>
+
+<section class="main-container">
+    <article class="index-intro">
+
         <h1>All categories</h1>
 
         <table border="1px">
@@ -37,8 +40,8 @@
 
         <a href="/category/add">Add next category</a>
 
-    </div>
-</div>
+    </article>
+</section>
 
 <%@ include file="../footer.jsp" %>
 </body>

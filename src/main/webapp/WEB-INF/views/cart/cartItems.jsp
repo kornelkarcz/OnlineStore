@@ -11,15 +11,15 @@
 
 <c:choose>
     <c:when test="${sessionScope.logged != null}">
-        <%@include file="../loggedHeader.jsp"%>
+        <%@include file="../loggedHeader.jsp" %>
     </c:when>
     <c:otherwise>
-        <%@include file="../header.jsp"%>
+        <%@include file="../header.jsp" %>
     </c:otherwise>
 </c:choose>
 
-<div id="container">
-    <div id="main">
+<section class="main-container">
+    <article class="index-intro">
 
         <h1>List of items in your cart</h1>
 
@@ -57,8 +57,8 @@
         <button class="button">Continue shopping</button>
         <button class="checkout">Go to the checkout</button>
 
-    </div>
-</div>
+    </article>
+</section>
 
 <%--<article class="index-table">--%>
 <%--<div class="table-container">--%>

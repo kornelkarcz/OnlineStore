@@ -17,8 +17,9 @@
     </c:otherwise>
 </c:choose>
 
-<div id="container">
-    <div id="main">
+<section class="main-container">
+    <article class="index-intro">
+
         <h1>Edit a product</h1>
 
         <article class="index-form">
@@ -63,8 +64,8 @@
                 </div>
             </div>
         </article>
-    </div>
-</div>
+    </article>
+</section>
 <%@ include file="../footer.jsp" %>
 </body>
 </html>

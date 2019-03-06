@@ -15,8 +15,9 @@
         <%@include file="../header.jsp"%>
     </c:otherwise>
 </c:choose>
-<div id="container">
-    <div id="main">
+<section class="main-container">
+    <article class="index-intro">
+
         <h1>Edit a category</h1>
 
         <article class="index-form">
@@ -38,8 +39,8 @@
             </div>
         </article>
 
-    </div>
-</div>
+    </article>
+</section>
 <%@ include file="../footer.jsp" %>
 </body>
 </html>
