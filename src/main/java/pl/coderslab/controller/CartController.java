@@ -61,8 +61,8 @@ public class CartController {
         return "cart/cartItems";
     }
 
-    @GetMapping("/remove/{id}")
-    public String removeFromCart(@PathVariable Long id, Model model) {
+    @GetMapping("/remove/{id}/{quantity}")
+    public String removeFromCart(@PathVariable Long id, @PathVariable Integer quantity, Model model) {
 
         Product product = productService.getById(id);
         List<CartItem> cartItems = cart.getCartItems();
@@ -71,15 +71,11 @@ public class CartController {
 
         if (cartItems.contains(fakeCartItem)) {
 
-            model.addAttribute("cart", cart);
+//            model.addAttribute("cart", cart);
 
-            //Nie przyjmuje tutaj ilości jaka kasujemy
-            BigDecimal amountToSubtract = product.getPrice().multiply(BigDecimal.valueOf(fakeCartItem.getQuantity()));
-            System.out.println(amountToSubtract);
+            BigDecimal amountToSubtract = product.getPrice().multiply(BigDecimal.valueOf(quantity));
             cart.setSum(cart.getSum().subtract(amountToSubtract));
-
             cartItems.remove(fakeCartItem);
-
 
         } else {
             return "redirect:/";

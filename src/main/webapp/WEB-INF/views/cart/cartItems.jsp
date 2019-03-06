@@ -40,7 +40,7 @@
                             <td>${cartItem.product.price}</td>
                             <td>${cartItem.quantity}</td>
                             <td>
-                                <a href="http://localhost:8080/cart/remove/${cartItem.product.id}">
+                                <a href="http://localhost:8080/cart/remove/${cartItem.product.id}/${cartItem.quantity}">
                                     <button>Remove from cart</button>
                                 </a>
                             </td>
