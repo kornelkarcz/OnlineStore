@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import pl.coderslab.model.AllPayments;
 import pl.coderslab.model.Payment;
+import pl.coderslab.model.PaymentDetails;
 import pl.coderslab.repository.PaymentRepository;
 
 import java.util.List;
@@ -20,5 +21,9 @@ public class PaymentService {
 
     public List<AllPayments> findAllPayments(Long id) {
         return paymentRepository.findAllPayments(id);
+    }
+
+    public List<PaymentDetails> getPaymentDetails(Long id) {
+        return paymentRepository.getPaymentDetails(id);
     }
 }

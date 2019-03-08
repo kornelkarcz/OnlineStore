@@ -4,6 +4,7 @@
 <head>
     <title>All payments</title>
     <%@ include file="../dependecies.jsp" %>
+    <script src="/js/getPaymentDetails.js"></script>
 </head>
 <body>
 <c:choose>

@@ -22,7 +22,7 @@
 This is my account<br>
 
         <a href="http://localhost:8080/order/allorders">My orders</a>
-        <a href="http://localhost:8080/payment/payments">My payments</a>
+        <a href="http://localhost:8080/payment/allpayments">My payments</a>
 
     </article>
 </section>
