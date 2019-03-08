@@ -3,6 +3,7 @@ package pl.coderslab.controller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.SessionAttributes;
 import pl.coderslab.model.*;
@@ -71,4 +72,14 @@ public class OrderController {
 
         return "order/pay";
     }
+
+    @GetMapping("/details")
+    public String findUserOrders(HttpSession session, Model model) {
+        User tempUser = (User) session.getAttribute("logged");
+        List<QueryUserOrders> orders = orderService.findUserOrders(tempUser.getId());
+        model.addAttribute("orders", orders);
+        return "order/details";
+    }
+
+
 }

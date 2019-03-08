@@ -19,6 +19,9 @@
 <section class="main-container">
     <article class="index-intro">
 
+This is my account<br>
+
+        <a href="http://localhost:8080/order/details">My orders</a>
 
     </article>
 </section>

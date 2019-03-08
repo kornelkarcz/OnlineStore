@@ -56,7 +56,7 @@ public class AppConfig extends WebMvcConfigurerAdapter {
     @Override
     public void addFormatters(FormatterRegistry registry) {
         registry.addConverter(getCategoryConverter());
-        registry.addConverter(getLocalDateTimeConverter());
+        registry.addConverter(new LocalDateTimeConverter("dd-MM-yyyy"));
     }
 
     @Bean
@@ -64,10 +64,10 @@ public class AppConfig extends WebMvcConfigurerAdapter {
         return new CategoryConverter();
     }
 
-    @Bean
-    public LocalDateTimeConverter getLocalDateTimeConverter() {
-        return new LocalDateTimeConverter();
-    }
+//    @Bean
+//    public LocalDateTimeConverter getLocalDateTimeConverter() {
+//        return new LocalDateTimeConverter();
+//    }
 
 
 }
