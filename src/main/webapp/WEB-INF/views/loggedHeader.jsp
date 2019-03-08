@@ -29,8 +29,8 @@
                         <ul class="dropdown-menu">
                             <li class="active"><a href="http://localhost:8080/user/myaccount">Account details</a></li>
                             <li class="active"><a href="#">Add address</a></li>
-                            <li class="active"><a href="#">My orders</a></li>
-                            <li class="active"><a href="#">My payments</a></li>
+                            <li class="active"><a href="http://localhost:8080/order/allorders">My orders</a></li>
+                            <li class="active"><a href="http://localhost:8080/payment/allpayments">My payments</a></li>
                         </ul>
                     </li>
 

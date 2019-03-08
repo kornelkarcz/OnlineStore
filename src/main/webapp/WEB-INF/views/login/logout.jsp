@@ -23,7 +23,7 @@
 <script>
     var timer = setTimeout(function() {
         window.location='http://localhost:8080'
-    }, 3000);
+    }, 2000);
 </script>
 
 <section class="main-container">

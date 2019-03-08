@@ -3,7 +3,9 @@ package pl.coderslab.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
+import pl.coderslab.model.AllPayments;
 import pl.coderslab.model.Order;
 import pl.coderslab.model.Payment;
 import pl.coderslab.model.User;
@@ -13,10 +15,11 @@ import pl.coderslab.service.UserService;
 
 import javax.servlet.http.HttpSession;
 import java.time.LocalDateTime;
+import java.util.List;
 
 @Controller
 @RequestMapping("/payment")
-@SessionAttributes("sessionOrder")
+@SessionAttributes({"sessionOrder", "logged"})
 public class PaymentController {
 
     @Autowired
@@ -41,5 +44,13 @@ public class PaymentController {
         paymentService.savePayment(payment);
 
         return "You have paid for the order, congrats!";
+    }
+
+    @GetMapping("/allpayments")
+    public String findAllPayments(HttpSession session, Model model) {
+        User tempUser = (User) session.getAttribute("logged");
+        List<AllPayments> payments = paymentService.findAllPayments(tempUser.getId());
+        model.addAttribute("payments", payments);
+        return "payment/allpayments";
     }
 }

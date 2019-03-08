@@ -2,8 +2,11 @@ package pl.coderslab.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+import pl.coderslab.model.AllPayments;
 import pl.coderslab.model.Payment;
 import pl.coderslab.repository.PaymentRepository;
+
+import java.util.List;
 
 @Component
 public class PaymentService {
@@ -13,5 +16,9 @@ public class PaymentService {
 
     public void savePayment(Payment payment) {
         paymentRepository.save(payment);
+    }
+
+    public List<AllPayments> findAllPayments(Long id) {
+        return paymentRepository.findAllPayments(id);
     }
 }
