@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.SessionAttributes;
 import pl.coderslab.model.*;
@@ -81,7 +82,12 @@ public class OrderController {
         return "order/allorders";
     }
 
-
+    @GetMapping("/allorders/{id}")
+    public String getOrderDetails(@PathVariable Long id, Model model) {
+        List<OrderDetails> orderDetails = orderService.findOrderDetails(id);
+        model.addAttribute("orderDetails", orderDetails);
+        return "order/details";
+    }
 
 
 }
