@@ -86,6 +86,10 @@ public class OrderController {
     public String getOrderDetails(@PathVariable Long id, Model model) {
         List<OrderDetails> orderDetails = orderService.findOrderDetails(id);
         model.addAttribute("orderDetails", orderDetails);
+
+        BigDecimal orderSum = orderService.getOrderSum(id);
+        model.addAttribute("orderSum", orderSum);
+
         return "order/details";
     }
 

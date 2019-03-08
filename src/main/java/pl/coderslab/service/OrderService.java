@@ -7,6 +7,7 @@ import pl.coderslab.model.OrderDetails;
 import pl.coderslab.model.QueryUserOrders;
 import pl.coderslab.repository.OrderRepository;
 
+import java.math.BigDecimal;
 import java.util.List;
 
 @Component
@@ -29,5 +30,9 @@ public class OrderService {
 
     public List<OrderDetails> findOrderDetails(Long id) {
         return orderRepository.findOrderDetails(id);
+    }
+
+    public BigDecimal getOrderSum(Long id) {
+        return orderRepository.getOrderSum(id);
     }
 }

@@ -6,6 +6,7 @@ import pl.coderslab.model.Order;
 import pl.coderslab.model.OrderDetails;
 import pl.coderslab.model.QueryUserOrders;
 
+import java.math.BigDecimal;
 import java.util.List;
 
 public interface OrderRepository extends JpaRepository<Order, Long> {
@@ -18,5 +19,7 @@ public interface OrderRepository extends JpaRepository<Order, Long> {
             " from Product p join p.productInOrders po where po.order.id = ?1")
     List<OrderDetails> findOrderDetails(Long id);
 
+    @Query("select sum(po.sum) from ProductInOrder po group by po.order.id having po.order.id = ?1")
+    BigDecimal getOrderSum(Long id);
 
 }
