@@ -5,6 +5,8 @@
 <head>
     <title>My orders</title>
     <%@ include file="../dependecies.jsp" %>
+    <script src="/js/getOrderDetails.js"></script>
+
 </head>
 <body>
 <c:choose>
