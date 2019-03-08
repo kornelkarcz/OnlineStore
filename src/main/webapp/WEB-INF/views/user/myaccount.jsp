@@ -21,7 +21,7 @@
 
 This is my account<br>
 
-        <a href="http://localhost:8080/order/details">My orders</a>
+        <a href="http://localhost:8080/order/allorders">My orders</a>
 
     </article>
 </section>

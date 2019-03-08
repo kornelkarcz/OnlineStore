@@ -73,12 +73,12 @@ public class OrderController {
         return "order/pay";
     }
 
-    @GetMapping("/details")
+    @GetMapping("/allorders")
     public String findUserOrders(HttpSession session, Model model) {
         User tempUser = (User) session.getAttribute("logged");
         List<QueryUserOrders> orders = orderService.findUserOrders(tempUser.getId());
         model.addAttribute("orders", orders);
-        return "order/details";
+        return "order/allorders";
     }
 
 

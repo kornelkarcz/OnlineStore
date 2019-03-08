@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
          var id = this.parentNode.parentNode.children[0].innerHTML;
 
-         window.location = "http://localhost:8080/order/details/" + id ;
+         window.location = "http://localhost:8080/order/allorders/" + id ;
 
      })
     }
