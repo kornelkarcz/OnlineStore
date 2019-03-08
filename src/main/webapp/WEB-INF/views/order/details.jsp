@@ -45,6 +45,15 @@
                     </c:forEach>
 
                 </table>
+
+                <div class="col-sm-4" style="text-align: center; padding-top: 50px; font-size: 16px">
+                    Total order sum: ${order.sum}
+                </div>
+                <div class="col-sm-4"></div>
+                <div class="col-sm-4" style="padding-top: 50px">
+                    <a class="btn btn-primary btn-block active" href="http://localhost:8080/order/allorders">Back to all orders</a>
+                </div>
+
             </div>
         </article>
     </article>

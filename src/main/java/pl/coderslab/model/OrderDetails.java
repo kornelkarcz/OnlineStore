@@ -22,6 +22,9 @@ public class OrderDetails {
         this.orderId = orderId;
     }
 
+    public OrderDetails() {
+    }
+
     public Long getProductId() {
         return productId;
     }

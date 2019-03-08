@@ -41,7 +41,7 @@
                             <td>${order.id}</td>
                             <td>${order.orderDate}</td>
                             <td>${order.sum}</td>
-                            <td><a class="btn btn-primary btn-block active" href="#">Details</a></td>
+                            <td><a class="btn btn-primary btn-block active">Details</a></td>
                         </tr>
                     </c:forEach>
 

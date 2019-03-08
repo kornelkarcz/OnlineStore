@@ -87,8 +87,11 @@ public class OrderController {
         List<OrderDetails> orderDetails = orderService.findOrderDetails(id);
         model.addAttribute("orderDetails", orderDetails);
 
+        OrderDetails order = new OrderDetails();
+
         BigDecimal orderSum = orderService.getOrderSum(id);
-        model.addAttribute("orderSum", orderSum);
+        order.setSum(orderSum);
+        model.addAttribute("order", order);
 
         return "order/details";
     }
