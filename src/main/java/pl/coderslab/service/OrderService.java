@@ -3,6 +3,7 @@ package pl.coderslab.service;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import pl.coderslab.model.Order;
+import pl.coderslab.model.OrderDetails;
 import pl.coderslab.model.QueryUserOrders;
 import pl.coderslab.repository.OrderRepository;
 
@@ -24,5 +25,9 @@ public class OrderService {
 
     public List<QueryUserOrders> findUserOrders(Long id) {
         return orderRepository.findUserOrders(id);
+    }
+
+    public List<OrderDetails> findOrderDetails(Long id) {
+        return orderRepository.findOrderDetails(id);
     }
 }

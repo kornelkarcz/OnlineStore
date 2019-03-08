@@ -7,7 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f37ef922-c4a0-4c2e-b178-5c04cafab6d8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/order/details.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/order/details.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/coderslab/repository/OrderRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/coderslab/repository/OrderRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/coderslab/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/coderslab/service/OrderService.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -18,14 +19,43 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
+    <splitter split-orientation="horizontal" split-proportion="0.26967096">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/order/details.jsp">
+            <entry file="file://$PROJECT_DIR$/src/main/java/pl/coderslab/model/OrderDetails.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="105">
-                  <caret line="7" column="39" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
+                <state relative-caret-position="480">
+                  <caret line="32" column="36" lean-forward="true" selection-start-line="32" selection-start-column="36" selection-end-line="32" selection-end-column="36" />
+                  <folding>
+                    <element signature="e#747#748#0" expanded="true" />
+                    <element signature="e#779#780#0" expanded="true" />
+                    <element signature="e#827#828#0" expanded="true" />
+                    <element signature="e#869#870#0" expanded="true" />
+                    <element signature="e#941#942#0" expanded="true" />
+                    <element signature="e#995#996#0" expanded="true" />
+                    <element signature="e#1041#1042#0" expanded="true" />
+                    <element signature="e#1087#1088#0" expanded="true" />
+                    <element signature="e#1129#1130#0" expanded="true" />
+                    <element signature="e#1199#1200#0" expanded="true" />
+                    <element signature="e#1261#1262#0" expanded="true" />
+                    <element signature="e#1297#1298#0" expanded="true" />
+                    <element signature="e#1328#1329#0" expanded="true" />
+                    <element signature="e#1377#1378#0" expanded="true" />
+                    <element signature="e#1417#1418#0" expanded="true" />
+                    <element signature="e#1453#1454#0" expanded="true" />
+                    <element signature="e#1481#1482#0" expanded="true" />
+                    <element signature="e#1527#1528#0" expanded="true" />
+                    <element signature="e#1561#1562#0" expanded="true" />
+                    <element signature="e#1595#1596#0" expanded="true" />
+                    <element signature="e#1621#1622#0" expanded="true" />
+                    <element signature="e#1663#1664#0" expanded="true" />
+                    <element signature="e#1693#1694#0" expanded="true" />
+                    <element signature="e#1725#1726#0" expanded="true" />
+                    <element signature="e#1755#1756#0" expanded="true" />
+                    <element signature="e#1799#1800#0" expanded="true" />
+                    <element signature="e#1837#1838#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -44,19 +74,59 @@
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/webapp/js/action.js">
+            <entry file="file://$PROJECT_DIR$/src/main/java/pl/coderslab/repository/OrderRepository.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="240">
-                  <caret line="16" column="2" lean-forward="true" selection-start-line="16" selection-end-line="16" selection-end-column="2" />
+                <state relative-caret-position="270">
+                  <caret line="18" column="49" lean-forward="true" selection-start-line="18" selection-start-column="49" selection-end-line="18" selection-end-column="49" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/main/java/pl/coderslab/service/OrderService.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="300">
+                  <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+                  <folding>
+                    <element signature="e#783#784#0" expanded="true" />
+                    <element signature="e#839#840#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/pl/coderslab/model/QueryUserOrders.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="420">
+                  <caret line="32" column="55" lean-forward="true" selection-start-line="32" selection-start-column="55" selection-end-line="32" selection-end-column="55" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                    <element signature="e#557#558#0" expanded="true" />
+                    <element signature="e#585#586#0" expanded="true" />
+                    <element signature="e#759#760#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/webapp/js/action.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="180">
+                  <caret line="12" column="101" lean-forward="true" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="101" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/webapp/js/getOrderDetails.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="135">
-                  <caret line="9" column="67" selection-start-line="9" selection-start-column="67" selection-end-line="9" selection-end-column="67" />
+                <state relative-caret-position="165">
+                  <caret line="11" column="71" selection-start-line="11" selection-start-column="71" selection-end-line="11" selection-end-column="71" />
                 </state>
               </provider>
             </entry>
@@ -71,8 +141,8 @@
         <option value="CSS File" />
         <option value="Interface" />
         <option value="Jsp File" />
-        <option value="Class" />
         <option value="JavaScript File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -112,7 +182,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/pl/coderslab/repository/PaymentRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/coderslab/service/PaymentService.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/coderslab/model/Payment.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/coderslab/model/Order.java" />
@@ -154,15 +223,16 @@
         <option value="$PROJECT_DIR$/src/main/webapp/css/styles.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/loggedHeader.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/myaccount.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/pl/coderslab/service/OrderService.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/coderslab/converter/QueryConverter.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/coderslab/converter/LocalDateTimeConverter.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/coderslab/config/AppConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pl/coderslab/repository/OrderRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/coderslab/controller/OrderController.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/coderslab/model/QueryUserOrders.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/order/details.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/getOrderDetails.js" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/coderslab/model/OrderDetails.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/coderslab/repository/OrderRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/coderslab/service/OrderService.java" />
       </list>
     </option>
   </component>
@@ -433,7 +503,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552042325594" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552044254054" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -552,12 +622,12 @@
       <workItem from="1551170397957" duration="75805000" />
       <workItem from="1551344171043" duration="56674000" />
       <workItem from="1551713525524" duration="1127000" />
-      <workItem from="1551716131721" duration="48001000" />
+      <workItem from="1551716131721" duration="49333000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="239184000" />
+    <option name="totallyTimeSpent" value="240516000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -569,9 +639,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="812" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.2639485" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2639485" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Persistence" order="3" side_tool="true" />
@@ -651,16 +720,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/coderslab/controller/ProductController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="810">
-          <caret line="54" column="5" selection-start-line="54" selection-start-column="5" selection-end-line="54" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pl/coderslab/filter/LoginFilter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -957,17 +1016,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/coderslab/service/OrderService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="24" column="31" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="31" />
-          <folding>
-            <element signature="e#575#576#0" expanded="true" />
-            <element signature="e#629#630#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pl/coderslab/converter/QueryConverter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -998,31 +1046,6 @@
           <caret line="19" column="25" lean-forward="true" selection-end-line="85" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/coderslab/model/QueryUserOrders.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="32" column="55" lean-forward="true" selection-start-line="32" selection-start-column="55" selection-end-line="32" selection-end-column="55" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#470#471#0" expanded="true" />
-            <element signature="e#495#496#0" expanded="true" />
-            <element signature="e#529#530#0" expanded="true" />
-            <element signature="e#557#558#0" expanded="true" />
-            <element signature="e#600#601#0" expanded="true" />
-            <element signature="e#632#633#0" expanded="true" />
-            <element signature="e#731#732#0" expanded="true" />
-            <element signature="e#762#763#0" expanded="true" />
-            <element signature="e#791#792#0" expanded="true" />
-            <element signature="e#833#834#0" expanded="true" />
-            <element signature="e#869#870#0" expanded="true" />
-            <element signature="e#903#904#0" expanded="true" />
-            <element signature="e#929#930#0" expanded="true" />
-            <element signature="e#971#972#0" expanded="true" />
-            <element signature="e#1001#1002#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1060,16 +1083,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/coderslab/repository/OrderRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/dependecies.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -1084,13 +1097,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/product/all.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="41" lean-forward="true" selection-start-line="8" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/order/details.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -1100,15 +1106,92 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/js/action.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="2" lean-forward="true" selection-start-line="16" selection-end-line="16" selection-end-column="2" />
+        <state relative-caret-position="180">
+          <caret line="12" column="101" lean-forward="true" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="101" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/js/getOrderDetails.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="67" selection-start-line="9" selection-start-column="67" selection-end-line="9" selection-end-column="67" />
+        <state relative-caret-position="165">
+          <caret line="11" column="71" selection-start-line="11" selection-start-column="71" selection-end-line="11" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/product/all.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="41" lean-forward="true" selection-start-line="8" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/coderslab/model/QueryUserOrders.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="32" column="55" lean-forward="true" selection-start-line="32" selection-start-column="55" selection-end-line="32" selection-end-column="55" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#557#558#0" expanded="true" />
+            <element signature="e#585#586#0" expanded="true" />
+            <element signature="e#759#760#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/coderslab/model/OrderDetails.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" column="36" lean-forward="true" selection-start-line="32" selection-start-column="36" selection-end-line="32" selection-end-column="36" />
+          <folding>
+            <element signature="e#747#748#0" expanded="true" />
+            <element signature="e#779#780#0" expanded="true" />
+            <element signature="e#827#828#0" expanded="true" />
+            <element signature="e#869#870#0" expanded="true" />
+            <element signature="e#941#942#0" expanded="true" />
+            <element signature="e#995#996#0" expanded="true" />
+            <element signature="e#1041#1042#0" expanded="true" />
+            <element signature="e#1087#1088#0" expanded="true" />
+            <element signature="e#1129#1130#0" expanded="true" />
+            <element signature="e#1199#1200#0" expanded="true" />
+            <element signature="e#1261#1262#0" expanded="true" />
+            <element signature="e#1297#1298#0" expanded="true" />
+            <element signature="e#1328#1329#0" expanded="true" />
+            <element signature="e#1377#1378#0" expanded="true" />
+            <element signature="e#1417#1418#0" expanded="true" />
+            <element signature="e#1453#1454#0" expanded="true" />
+            <element signature="e#1481#1482#0" expanded="true" />
+            <element signature="e#1527#1528#0" expanded="true" />
+            <element signature="e#1561#1562#0" expanded="true" />
+            <element signature="e#1595#1596#0" expanded="true" />
+            <element signature="e#1621#1622#0" expanded="true" />
+            <element signature="e#1663#1664#0" expanded="true" />
+            <element signature="e#1693#1694#0" expanded="true" />
+            <element signature="e#1725#1726#0" expanded="true" />
+            <element signature="e#1755#1756#0" expanded="true" />
+            <element signature="e#1799#1800#0" expanded="true" />
+            <element signature="e#1837#1838#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/coderslab/repository/OrderRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="49" lean-forward="true" selection-start-line="18" selection-start-column="49" selection-end-line="18" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/coderslab/service/OrderService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+          <folding>
+            <element signature="e#783#784#0" expanded="true" />
+            <element signature="e#839#840#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
