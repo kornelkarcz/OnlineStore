@@ -57,11 +57,11 @@ public class PaymentController {
         List<PaymentDetails> paymentDetails = paymentService.getPaymentDetails(id);
         model.addAttribute("paymentDetails", paymentDetails);
 
-        OrderDetails order = new OrderDetails();
+        PaymentDetails payment = new PaymentDetails();
 
-        BigDecimal orderSum = orderService.getOrderSum(id);
-        order.setSum(orderSum);
-        model.addAttribute("order", order);
+        BigDecimal paymentSum = paymentService.getPaymentSum(id);
+        payment.setSum(paymentSum);
+        model.addAttribute("payment", payment);
 
         return "payment/details";
     }

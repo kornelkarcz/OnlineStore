@@ -53,7 +53,7 @@
                 </table>
 
                 <div class="col-sm-4" style="text-align: center; padding-top: 50px; font-size: 16px">
-                    Total order sum: ${order.sum}
+                    Total order sum: ${payment.sum}
                 </div>
                 <div class="col-sm-4"></div>
                 <div class="col-sm-4" style="padding-top: 50px">

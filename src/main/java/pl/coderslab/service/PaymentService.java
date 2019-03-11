@@ -7,6 +7,7 @@ import pl.coderslab.model.Payment;
 import pl.coderslab.model.PaymentDetails;
 import pl.coderslab.repository.PaymentRepository;
 
+import java.math.BigDecimal;
 import java.util.List;
 
 @Component
@@ -25,5 +26,9 @@ public class PaymentService {
 
     public List<PaymentDetails> getPaymentDetails(Long id) {
         return paymentRepository.getPaymentDetails(id);
+    }
+
+    public BigDecimal getPaymentSum(Long id) {
+        return paymentRepository.getPaymentSum(id);
     }
 }
