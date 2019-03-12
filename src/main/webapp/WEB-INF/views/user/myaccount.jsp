@@ -19,10 +19,18 @@
 <section class="main-container">
     <article class="index-intro">
 
-This is my account<br>
-
-        <a href="http://localhost:8080/order/allorders">My orders</a>
-        <a href="http://localhost:8080/payment/allpayments">My payments</a>
+        <div class="col-sm-4"></div>
+        <div class="col-sm-4">
+            <div id="list-example" class="list-group">
+                <a class="list-group-item list-group-item-action" href="#list-item-1">My details</a>
+                <a class="list-group-item list-group-item-action" href="http://localhost:8080/user/myaccount/add-address">Add address</a>
+                <a class="list-group-item list-group-item-action" href="http://localhost:8080/order/allorders">My orders</a>
+                <a class="list-group-item list-group-item-action" href="http://localhost:8080/payment/allpayments">My payments</a>
+            </div>
+            <div data-spy="scroll" data-target="#list-example" data-offset="0" class="scrollspy-example">
+            </div>
+        </div>
+        <div class="col-sm-4"></div>
 
     </article>
 </section>

@@ -125,3 +125,25 @@ header {
     color: red;
     font-weight: bold;
 }
+
+.list-group-item {
+    text-align: center;
+}
+
+/*Credit card validation*/
+
+.card-grp {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-item {
+    width: 48%;
+    margin-bottom: 15px;
+}
+
+.fas fa-user{
+    position: absolute;
+    bottom: 12px;
+    left: 15px;
+}
