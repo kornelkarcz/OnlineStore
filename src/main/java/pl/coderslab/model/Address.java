@@ -20,26 +20,26 @@ public class Address {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @NotBlank
-    @Size(min = 3, max = 50)
+    @NotBlank(message = "Street name cannot be empty")
+    @Size(min = 3, max = 50, message = "Invalid street name size")
     private String streetName;
 
-    @NotNull
+    @NotNull(message = "House number cannot be null")
     private int houseNumber;
 
-    @NotNull
+    @NotNull(message = "House number cannot be null")
     private int flatNumber;
 
-    @NotBlank
-    @Pattern(regexp = "\\d{2}-\\d{3}")
+    @NotBlank(message = "Postal code cannotbe empty")
+    @Pattern(regexp = "\\d{2}-\\d{3}", message = "Invalid postal code pattern")
     private String postalCode;
 
-    @NotBlank
-    @Size(min = 3, max = 50)
+    @NotBlank (message = "City name cannot be null")
+    @Size(min = 3, max = 50, message = "Invalid size of city name")
     private String city;
 
-    @NotBlank
-    @Size(min = 3, max = 50)
+    @NotBlank (message = "Country name cannot be null")
+    @Size(min = 3, max = 50, message = "Invalid size of country name")
     private String country;
 
     public Address() {
