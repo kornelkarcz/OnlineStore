@@ -120,3 +120,8 @@ header {
 .index-intro .div-gallery {
     padding: 20px 20px;
 }
+
+.error {
+    color: red;
+    font-weight: bold;
+}

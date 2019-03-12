@@ -10,10 +10,10 @@
 
 <c:choose>
     <c:when test="${sessionScope.logged != null}">
-        <%@include file="../loggedHeader.jsp"%>
+        <%@include file="../loggedHeader.jsp" %>
     </c:when>
     <c:otherwise>
-        <%@include file="../header.jsp"%>
+        <%@include file="../header.jsp" %>
     </c:otherwise>
 </c:choose>
 
@@ -30,26 +30,32 @@
                             <div class="form-group">
                                 <label for="name">Street name:</label>
                                 <form:input path="streetName" class="form-control" type="text" name="streetName"/>
+                                <form:errors path="streetName" cssClass="error"/>
                             </div>
                             <div class="form-group">
                                 <label for="houseNumber">House number:</label>
                                 <form:input path="houseNumber" class="form-control" type="text" name="houseNumber"/>
+                                <form:errors path="houseNumber" cssClass="error"/>
                             </div>
                             <div class="form-group">
                                 <label for="flatNumber">Flat number:</label>
                                 <form:input path="flatNumber" class="form-control" type="text" name="flatNumber"/>
+                                <form:errors path="flatNumber" cssClass="error"/>
                             </div>
                             <div class="form-group">
                                 <label for="postalCode">Postal code:</label>
                                 <form:input path="postalCode" class="form-control" type="text" name="postalCode"/>
+                                <form:errors path="postalCode" cssClass="error"/>
                             </div>
                             <div class="form-group">
                                 <label for="city">City:</label>
                                 <form:input path="city" class="form-control" type="text" name="city"/>
+                                <form:errors path="city" cssClass="error"/>
                             </div>
                             <div class="form-group">
                                 <label for="country">City:</label>
                                 <form:input path="country" class="form-control" type="text" name="country"/>
+                                <form:errors path="country" cssClass="error"/>
                             </div>
                             <button class="btn btn-primary btn-block active">Submit</button>
                         </form:form>

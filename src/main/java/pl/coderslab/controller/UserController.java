@@ -58,7 +58,7 @@ public class UserController {
     @PostMapping("/myaccount/add-address")
     public String addAddress(@Valid Address address, BindingResult result, HttpSession session) {
         if (result.hasErrors()) {
-            return "add-address";
+            return "user/add-address";
         } else {
             User sessionUser = (User) session.getAttribute("logged");
             addressService.saveAddress(address);
