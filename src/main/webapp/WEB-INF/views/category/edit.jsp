@@ -30,6 +30,7 @@
                             <div class="form-group">
                                 <label for="name">Name:</label>
                                 <form:input path="name" class="form-control" type="text" name="name"/>
+                                <form:errors path="name" cssClass="error"/>
                             </div>
                             <button class="btn btn-primary btn-block active">Submit</button>
                         </form:form>

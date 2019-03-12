@@ -34,10 +34,12 @@
                             <div class="form-group">
                                 <label for="name">Name:</label>
                                 <form:input path="name" class="form-control" type="text" name="name"/>
+                                <form:errors path="name" cssClass="error"/>
                             </div>
                             <div class="form-group">
                                 <label for="eanNumber">EAN Number:</label>
                                 <form:input path="eanNumber" class="form-control" type="text" name="eanNumber"/>
+                                <form:errors path="eanNumber" cssClass="error"/>
                             </div>
                             <div class="form-group">
                                 <label for="category">Category:</label>
@@ -49,14 +51,17 @@
                             <div class="form-group">
                                 <label for="manufacturer">Manufacturer:</label>
                                 <form:input path="manufacturer" class="form-control" type="text" name="manufacturer"/>
+                                <form:errors path="manufacturer" cssClass="error"/>
                             </div>
                             <div class="form-group">
                                 <label for="price">Price:</label>
                                 <form:input path="price" class="form-control" type="text" name="price"/>
+                                <form:errors path="price" cssClass="error"/>
                             </div>
                             <div class="form-group">
                                 <label for="description">Description:</label>
                                 <form:textarea path="description" class="form-control"/>
+                                <form:errors path="description" cssClass="error"/>
                             </div>
                             <button class="btn btn-primary btn-block active">Submit</button>
                         </form:form>
