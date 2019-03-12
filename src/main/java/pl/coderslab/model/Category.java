@@ -13,7 +13,7 @@ public class Category {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @NotBlank
+    @NotBlank(message = "Name of category cannot be empty")
     private String name;
 
     @OneToMany(fetch = FetchType.LAZY, mappedBy = "category")

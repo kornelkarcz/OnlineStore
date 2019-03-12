@@ -17,19 +17,19 @@ public class User {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @NotBlank
-    @Size(min = 3, max = 30)
+    @NotBlank(message = "First name cannot be empty")
+    @Size(min = 3, max = 30, message = "Invalid first name size")
     private String firstName;
 
-    @NotBlank
-    @Size(min = 2, max = 50)
+    @NotBlank(message = "Last name cannot be empty")
+    @Size(min = 2, max = 50, message = "Invalid last name size")
     private String lastName;
 
-    @NotBlank
-    @Pattern(regexp = "[_a-zA-Z0-9-]+(\\.[_a-zA-Z0-9-]+)*@[a-zA-Z0-9-]+(\\.[a-zA-Z0-9-]+)*\\.([a-zA-Z]{2,}){1}")
+    @NotBlank(message = "Email name cannot be empty")
+    @Pattern(regexp = "[_a-zA-Z0-9-]+(\\.[_a-zA-Z0-9-]+)*@[a-zA-Z0-9-]+(\\.[a-zA-Z0-9-]+)*\\.([a-zA-Z]{2,}){1}", message = "Invalid email pattern")
     private String email;
 
-    @NotBlank
+    @NotBlank(message = "Password cannot be empty")
     private String password;
 
 //    private LocalDateTime dateOfBirth;

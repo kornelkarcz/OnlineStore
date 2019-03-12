@@ -15,15 +15,15 @@ public class Company {
     private Long id;
 
     @NotBlank(message = "Company name cannot be empty.")
-    @Size(min = 3, max = 100)
+    @Size(min = 3, max = 100, message = "Invalid size of company name")
     private String name;
 
     @NotBlank(message = "NIP number cannot be empty.")
-    @Pattern(regexp = "\\d{3}-\\d{3}-\\d{2}-\\d{2}")
+    @Pattern(regexp = "\\d{3}-\\d{3}-\\d{2}-\\d{2}", message = "Invalid NIP number pattern")
     private String nip;
 
     @NotBlank(message = "REGON number cannot be empty.")
-    @Pattern(regexp = "\\d{9}")
+    @Pattern(regexp = "\\d{9}", message = "Invalid REGON pattern")
     private String regon;
 
     //Assumption: one company is registered under one address

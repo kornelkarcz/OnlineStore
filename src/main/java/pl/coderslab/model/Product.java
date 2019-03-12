@@ -21,23 +21,23 @@ public class Product {
     private Long id;
 
     @NotBlank(message = "Name cannot be empty.")
-    @Size(min = 3, max = 50)
+    @Size(min = 3, max = 50, message = "Invalid name size")
     private String name;
 
     @NotBlank(message = "Manufacturer's name cannot be empty.")
-    @Size(min = 3, max = 50)
+    @Size(min = 3, max = 50, message = "Invalid size of manufacturer name")
     private String manufacturer;
 
     @NotNull(message = "Price cannot be null.")
     @Digits(integer = 4, fraction = 2, message = "Use digits only.")
     private BigDecimal price;
 
-    @NotBlank
-    @Size(max = 1000)
+    @NotBlank(message = "Description cannot be empty")
+    @Size(max = 1000, message = "Too long description")
     private String description;
 
-    @NotBlank
-    @Pattern(regexp = "\\d{13}")
+    @NotBlank(message = "EAN number cannot be empty")
+    @Pattern(regexp = "\\d{13}", message = "Invalid EAN number pattern")
     private String eanNumber;
 
     @OneToMany(mappedBy = "product", cascade = {CascadeType.PERSIST, CascadeType.MERGE})
