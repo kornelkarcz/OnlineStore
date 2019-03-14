@@ -16,7 +16,7 @@ import java.util.List;
 
 @Controller
 @RequestMapping("/")
-@SessionAttributes("logged")
+@SessionAttributes({"logged", "isAdmin"})
 public class LoginController {
 
     @Autowired
@@ -44,7 +44,9 @@ public class LoginController {
                 }
             }
         }
+        boolean isAdmin = logged.isSuperAdmin();
         model.addAttribute("logged", logged);
+        model.addAttribute("isAdmin", isAdmin);
 
         return "redirect:/";
 
