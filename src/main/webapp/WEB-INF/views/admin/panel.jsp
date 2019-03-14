@@ -27,19 +27,19 @@
             <table class="table table-condensed table-hover">
                 <tr class="itemRow">
                     <td>Number of users:</td>
-                    <td>${countUser}</td>
+                    <td class="stat">${countUser}</td>
                 </tr>
                 <tr class="itemRow">
                     <td>Number of orders</td>
-                    <td>${countOrders}</td>
+                    <td class="stat">${countOrders}</td>
                 </tr>
                 <tr class="itemRow">
                     <td>Number of payments</td>
-                    <td>${countPayments}</td>
+                    <td class="stat">${countPayments}</td>
                 </tr>
                 <tr class="itemRow">
                     <td>Total sum of payments</td>
-                    <td></td>
+                    <td class="stat">${sumPayments}</td>
                 </tr>
             </table>
 

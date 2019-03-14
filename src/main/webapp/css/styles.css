@@ -147,3 +147,7 @@ header {
     bottom: 12px;
     left: 15px;
 }
+
+.index-intro .stat {
+    text-align: right;
+}
