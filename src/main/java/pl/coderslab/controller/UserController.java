@@ -32,6 +32,7 @@ public class UserController {
     @GetMapping("/register")
     public String registerUser(Model model) {
         model.addAttribute("user", new User());
+        User temp = new User();
         return "/user/register";
     }
 
@@ -64,6 +65,7 @@ public class UserController {
             addressService.saveAddress(address);
             User user = userService.findById(sessionUser.getId());
             user.setAddress(address);
+
             userService.registerUser(user);
 
             return "redirect:/";
