@@ -5,6 +5,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import pl.coderslab.service.OrderService;
 import pl.coderslab.service.PaymentService;
 import pl.coderslab.service.UserService;
 
@@ -18,10 +19,14 @@ public class AdminController {
     @Autowired
     private PaymentService paymentService;
 
+    @Autowired
+    private OrderService orderService;
+
     @GetMapping("/panel-control")
     public String getPanelControl(Model model) {
         model.addAttribute("countUser", userService.getNumberOfUsers());
         model.addAttribute("countPayments", paymentService.getNumberOfPayments());
-    return "admin/panel";
+        model.addAttribute("countOrders", orderService.getNumberOfOrders());
+        return "admin/panel";
     }
 }

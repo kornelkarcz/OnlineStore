@@ -35,4 +35,8 @@ public class OrderService {
     public BigDecimal getOrderSum(Long id) {
         return orderRepository.getOrderSum(id);
     }
+
+    public Integer getNumberOfOrders() {
+        return orderRepository.getNumberOfOrders();
+    }
 }

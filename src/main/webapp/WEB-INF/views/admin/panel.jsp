@@ -31,7 +31,7 @@
                 </tr>
                 <tr class="itemRow">
                     <td>Number of orders</td>
-                    <td></td>
+                    <td>${countOrders}</td>
                 </tr>
                 <tr class="itemRow">
                     <td>Number of payments</td>

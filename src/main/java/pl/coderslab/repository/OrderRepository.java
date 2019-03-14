@@ -22,4 +22,7 @@ public interface OrderRepository extends JpaRepository<Order, Long> {
     @Query("select sum(po.sum) from ProductInOrder po group by po.order.id having po.order.id = ?1")
     BigDecimal getOrderSum(Long id);
 
+    @Query(value = "select COUNT(*) from orders", nativeQuery = true)
+    Integer getNumberOfOrders();
+
 }
