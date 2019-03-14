@@ -5,10 +5,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-import pl.coderslab.service.OrderService;
-import pl.coderslab.service.PaymentService;
-import pl.coderslab.service.ProductInOrdersService;
-import pl.coderslab.service.UserService;
+import pl.coderslab.repository.ProductRepository;
+import pl.coderslab.service.*;
 
 @Controller
 @RequestMapping("/admin")
@@ -26,6 +24,9 @@ public class AdminController {
     @Autowired
     private ProductInOrdersService productInOrdersService;
 
+    @Autowired
+    private ProductService productService;
+
     @GetMapping("/panel-control")
     public String getPanelControl(Model model) {
         model.addAttribute("countUser", userService.getNumberOfUsers());
@@ -33,5 +34,11 @@ public class AdminController {
         model.addAttribute("countOrders", orderService.getNumberOfOrders());
         model.addAttribute("sumPayments", productInOrdersService.getSumOfPayments());
         return "admin/panel";
+    }
+
+    @GetMapping("products")
+    public String getAllProducts(Model model) {
+        model.addAttribute("products", productService.findAll());
+        return "admin/allproducts";
     }
 }

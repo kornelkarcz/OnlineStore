@@ -142,7 +142,7 @@ header {
     margin-bottom: 15px;
 }
 
-.fas fa-user{
+.fas fa-user {
     position: absolute;
     bottom: 12px;
     left: 15px;
@@ -150,4 +150,8 @@ header {
 
 .index-intro .stat {
     text-align: right;
+}
+
+.table .itemRow .btn {
+    text-align: center;
 }
