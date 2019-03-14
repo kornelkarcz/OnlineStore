@@ -22,5 +22,8 @@ public interface PaymentRepository extends JpaRepository<Payment, Long> {
 
     @Query("select sum(po.sum), pay.id from Payment pay join pay.order o join o.productInOrders po group by pay.id having pay.id = ?1")
     BigDecimal getPaymentSum(Long id);
+
+    @Query(value = "select COUNT(*) from payments",nativeQuery = true)
+    Integer getNumberOfPayments();
 }
 

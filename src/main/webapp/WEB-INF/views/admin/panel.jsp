@@ -35,7 +35,7 @@
                 </tr>
                 <tr class="itemRow">
                     <td>Number of payments</td>
-                    <td></td>
+                    <td>${countPayments}</td>
                 </tr>
                 <tr class="itemRow">
                     <td>Total sum of payments</td>

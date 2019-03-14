@@ -31,4 +31,8 @@ public class PaymentService {
     public BigDecimal getPaymentSum(Long id) {
         return paymentRepository.getPaymentSum(id);
     }
+
+    public Integer getNumberOfPayments() {
+        return paymentRepository.getNumberOfPayments();
+    }
 }
