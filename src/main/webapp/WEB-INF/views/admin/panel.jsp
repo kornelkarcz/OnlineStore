@@ -46,8 +46,8 @@
         </div>
         <div class="col-sm-4">
             <div id="list-example" class="list-group">
-                <a class="list-group-item list-group-item-action" href="#">Users</a>
-                <a class="list-group-item list-group-item-action" href="http://localhost:8080/admin/products">Products</a>
+                <a class="list-group-item list-group-item-action" href="/admin/users">Users</a>
+                <a class="list-group-item list-group-item-action" href="/admin/products">Products</a>
                 <a class="list-group-item list-group-item-action" href="#">Categories</a>
                 <a class="list-group-item list-group-item-action" href="#">Orders</a>
                 <a class="list-group-item list-group-item-action" href="#">Payments</a>

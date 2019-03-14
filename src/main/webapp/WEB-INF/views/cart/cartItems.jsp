@@ -8,8 +8,10 @@
 
 </head>
 <body>
-
 <c:choose>
+    <c:when test="${isAdmin == true}">
+        <%@include file="../adminHeader.jsp" %>
+    </c:when>
     <c:when test="${sessionScope.logged != null}">
         <%@include file="../loggedHeader.jsp" %>
     </c:when>

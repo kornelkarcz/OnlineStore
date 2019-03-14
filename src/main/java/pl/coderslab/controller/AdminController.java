@@ -41,4 +41,10 @@ public class AdminController {
         model.addAttribute("products", productService.findAll());
         return "admin/allproducts";
     }
+
+    @GetMapping("users")
+    public String getAllUsers(Model model) {
+        model.addAttribute("users", userService.findAll());
+        return "admin/allusers";
+    }
 }
