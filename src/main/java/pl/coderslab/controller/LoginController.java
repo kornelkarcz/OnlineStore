@@ -5,6 +5,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 import pl.coderslab.model.FakeUser;
 import pl.coderslab.model.User;
 import pl.coderslab.service.UserService;
@@ -30,7 +31,7 @@ public class LoginController {
     }
 
     @PostMapping("login")
-    public String logIn(@ModelAttribute FakeUser fakeUser, Model model) {
+    public String logIn(@ModelAttribute FakeUser fakeUser, Model model, RedirectAttributes redirectAttributes) {
 
         List<User> userList = userService.findAll();
         User logged = new User();
@@ -45,6 +46,7 @@ public class LoginController {
             }
         }
         boolean isAdmin = logged.isSuperAdmin();
+        redirectAttributes.addFlashAttribute(isAdmin);
         model.addAttribute("logged", logged);
         model.addAttribute("isAdmin", isAdmin);
 
