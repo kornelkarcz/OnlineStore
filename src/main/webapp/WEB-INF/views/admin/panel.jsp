@@ -50,7 +50,7 @@
                 <a class="list-group-item list-group-item-action" href="/admin/products">Products</a>
                 <a class="list-group-item list-group-item-action" href="/admin/categories">Categories</a>
                 <a class="list-group-item list-group-item-action" href="/admin/orders">Orders</a>
-                <a class="list-group-item list-group-item-action" href="#">Payments</a>
+                <a class="list-group-item list-group-item-action" href="/admin/payments">Payments</a>
             </div>
             <div data-spy="scroll" data-target="#list-example" data-offset="0" class="scrollspy-example">
             </div>

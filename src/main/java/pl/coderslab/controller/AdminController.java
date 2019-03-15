@@ -62,4 +62,10 @@ public class AdminController {
         model.addAttribute("orders", orderService.getAllOrders());
         return "admin/allorders";
     }
+
+    @GetMapping("payments")
+    public String getAllPayments(Model model) {
+        model.addAttribute("payments", paymentService.getAllPaymentsForAdmin());
+        return "admin/allpayments";
+    }
 }

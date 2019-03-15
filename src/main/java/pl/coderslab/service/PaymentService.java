@@ -2,6 +2,7 @@ package pl.coderslab.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+import pl.coderslab.model.AdminAllPaymentsQuery;
 import pl.coderslab.model.AllPayments;
 import pl.coderslab.model.Payment;
 import pl.coderslab.model.PaymentDetails;
@@ -34,5 +35,9 @@ public class PaymentService {
 
     public Integer getNumberOfPayments() {
         return paymentRepository.getNumberOfPayments();
+    }
+
+    public List<AdminAllPaymentsQuery> getAllPaymentsForAdmin() {
+        return paymentRepository.getAllPaymentsForAdmin();
     }
 }
