@@ -15,4 +15,7 @@ public interface UserRepository extends JpaRepository<User, Long> {
     @Query(value = "select COUNT(*) from users where superAdmin = \"false\"", nativeQuery = true)
     Integer numberOfUsers();
 
+    @Query("select u from User u where u.id = ?1")
+    User getUserDetails(Long id);
+
 }

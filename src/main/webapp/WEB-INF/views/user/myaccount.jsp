@@ -40,7 +40,7 @@
         </div>
         <div class="col-sm-4">
             <div id="list-example" class="list-group">
-                <a class="list-group-item list-group-item-action" href="#list-item-1">My details</a>
+                <a class="list-group-item list-group-item-action" href="/user/myaccount/details">My details</a>
                 <a class="list-group-item list-group-item-action"
                    href="http://localhost:8080/user/myaccount/add-address">Add address</a>
                 <a class="list-group-item list-group-item-action" href="http://localhost:8080/order/allorders">My

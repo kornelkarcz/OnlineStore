@@ -63,6 +63,14 @@ public class UserController {
         return "user/myaccount";
     }
 
+    @GetMapping("/myaccount/details")
+    public String accountDetails(Model model, HttpSession session) {
+        User sessionUser = (User) session.getAttribute("logged");
+        Long id = sessionUser.getId();
+        model.addAttribute("userDetails", userService.getUserDetails(id));
+        return "user/userdetails";
+    }
+
     @RequestMapping("/myaccount/add-address")
     public String addAddress(Model model) {
         model.addAttribute("address", new Address());
