@@ -7,6 +7,7 @@ import pl.coderslab.model.Order;
 import pl.coderslab.model.OrderDetails;
 import pl.coderslab.model.QueryUserOrders;
 
+import javax.persistence.criteria.CriteriaBuilder;
 import java.math.BigDecimal;
 import java.util.List;
 
@@ -29,5 +30,8 @@ public interface OrderRepository extends JpaRepository<Order, Long> {
     @Query("select new pl.coderslab.model.AdminAllOrdersQuery(o.id, u.firstName, u.lastName, po.sum, o.orderDate)" +
             "from Order o join o.productInOrders po join o.user u)")
     List<AdminAllOrdersQuery> findAllOrdersForAdmin();
+
+    @Query("select count (o.id), u.id from Order o join o.user u where u.id = ?1")
+    Integer getNumberOfOrdersForUser(Long id);
 
 }

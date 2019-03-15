@@ -26,7 +26,7 @@
             <table class="table table-condensed table-hover">
                 <tr class="itemRow">
                     <td>Number of orders</td>
-                    <td class="stat">${countOrders}</td>
+                    <td class="stat">${userOrderNumber}</td>
                 </tr>
                 <tr class="itemRow">
                     <td>Number of payments</td>

@@ -57,6 +57,7 @@ public class UserController {
     public String displayMyAccount(Model model, HttpSession session) {
         User sessionUser = (User) session.getAttribute("logged");
         Long id = sessionUser.getId();
+        model.addAttribute("userOrderNumber", orderService.getNumberOfOrdersForUser(id));
         model.addAttribute("userPaymentNumber", paymentService.getNumberOfPaymentsForUser(id));
         model.addAttribute("userPaymentSum", paymentService.getTotalSumForUser(id));
         return "user/myaccount";

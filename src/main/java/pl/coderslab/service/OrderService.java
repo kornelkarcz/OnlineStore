@@ -44,4 +44,8 @@ public class OrderService {
     public List<AdminAllOrdersQuery> getAllOrders() {
         return orderRepository.findAllOrdersForAdmin();
     }
+
+    public Integer getNumberOfOrdersForUser(Long id) {
+        return orderRepository.getNumberOfOrdersForUser(id);
+    }
 }
