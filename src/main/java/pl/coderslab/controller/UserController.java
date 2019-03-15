@@ -72,7 +72,7 @@ public class UserController {
         return "user/userdetails";
     }
 
-    @RequestMapping("/myaccount/details/add-address")
+    @GetMapping("/myaccount/details/add-address")
     public String addAddress(Model model) {
         model.addAttribute("address", new Address());
         return "user/add-address";
@@ -81,7 +81,7 @@ public class UserController {
     @PostMapping("/myaccount/details/add-address")
     public String addAddress(@Valid Address address, BindingResult result, HttpSession session) {
         if (result.hasErrors()) {
-            return "user/details/add-address";
+            return "user/myaccount/details/add-address";
         } else {
             User sessionUser = (User) session.getAttribute("logged");
             addressService.saveAddress(address);
@@ -93,4 +93,28 @@ public class UserController {
             return "redirect:/user/myaccount/details";
         }
     }
+
+    @GetMapping("/myaccount/details/edit-address/{id}")
+    public String editAddress(Model model, @PathVariable Long id) {
+        model.addAttribute("address", addressService.findById(id));
+        return "user/edit-address";
+    }
+
+    @PostMapping("/myaccount/details/edit-address")
+    public String editAddress(@Valid Address address, BindingResult result) {
+        if (result.hasErrors()) {
+            return "user/myaccount/details/edit-address";
+        } else {
+            addressService.saveAddress(address);
+        }
+        return "redirect:/user/myaccount/details";
+    }
+
+    @GetMapping("/myaccount/details/newpassword")
+    public String newPassword(){
+        return "user/newpassword";
+    }
+
+
+
 }

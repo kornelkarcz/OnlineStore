@@ -1,13 +1,16 @@
-<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Add address</title>
+    <title>Edit address</title>
     <%@ include file="../dependecies.jsp" %>
 </head>
 <body>
 <c:choose>
+    <c:when test="${isAdmin == true}">
+        <%@include file="../adminHeader.jsp" %>
+    </c:when>
     <c:when test="${sessionScope.logged != null}">
         <%@include file="../loggedHeader.jsp" %>
     </c:when>
@@ -25,7 +28,8 @@
                     <div class="col-sm-4"></div>
                     <div class="col-sm-4">
                         <h2>Provide postal info</h2>
-                        <form:form method="post" modelAttribute="address">
+                        <form:form method="post" modelAttribute="address" action="/user/myaccount/details/edit-address">
+                            <form:hidden path="id"/>
                             <div class="form-group">
                                 <label for="name">Street name:</label>
                                 <form:input path="streetName" class="form-control" type="text" name="streetName"/>
@@ -56,7 +60,7 @@
                                 <form:input path="country" class="form-control" type="text" name="country"/>
                                 <form:errors path="country" cssClass="error"/>
                             </div>
-                            <button class="btn btn-primary btn-block active">Submit</button>
+                            <button class="btn btn-primary btn-block active">Update address</button>
                         </form:form>
                     </div>
                     <div class="col-sm-4"></div>

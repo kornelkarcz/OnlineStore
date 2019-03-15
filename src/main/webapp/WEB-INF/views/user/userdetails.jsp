@@ -7,6 +7,9 @@
 </head>
 <body>
 <c:choose>
+    <c:when test="${isAdmin == true}">
+        <%@include file="../adminHeader.jsp" %>
+    </c:when>
     <c:when test="${sessionScope.logged != null}">
         <%@include file="../loggedHeader.jsp" %>
     </c:when>
@@ -73,7 +76,7 @@
                             <td class="stat">${addressDetails.country}</td>
                         </tr>
                         <tr class="itemRow">
-                            <td><a href="/admin/categories/edit/${order.id}">
+                            <td><a href="/user/myaccount/details/edit-address/${addressDetails.id}">
                                 <button class="btn btn-primary btn-block active">Edit address</button>
                             </a>
                             </td>
