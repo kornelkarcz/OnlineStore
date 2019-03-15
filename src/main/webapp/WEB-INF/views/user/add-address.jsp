@@ -7,7 +7,6 @@
     <%@ include file="../dependecies.jsp" %>
 </head>
 <body>
-
 <c:choose>
     <c:when test="${sessionScope.logged != null}">
         <%@include file="../loggedHeader.jsp" %>
@@ -66,7 +65,6 @@
         </article>
     </article>
 </section>
-
 
 <%@ include file="../footer.jsp" %>
 </body>

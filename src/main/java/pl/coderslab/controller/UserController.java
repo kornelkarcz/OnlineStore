@@ -72,16 +72,16 @@ public class UserController {
         return "user/userdetails";
     }
 
-    @RequestMapping("/myaccount/add-address")
+    @RequestMapping("/myaccount/details/add-address")
     public String addAddress(Model model) {
         model.addAttribute("address", new Address());
         return "user/add-address";
     }
 
-    @PostMapping("/myaccount/add-address")
+    @PostMapping("/myaccount/details/add-address")
     public String addAddress(@Valid Address address, BindingResult result, HttpSession session) {
         if (result.hasErrors()) {
-            return "user/add-address";
+            return "user/details/add-address";
         } else {
             User sessionUser = (User) session.getAttribute("logged");
             addressService.saveAddress(address);
@@ -90,7 +90,7 @@ public class UserController {
 
             userService.registerUser(user);
 
-            return "redirect:/";
+            return "redirect:/user/myaccount/details";
         }
     }
 }

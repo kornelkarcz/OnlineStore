@@ -105,7 +105,7 @@
                             <td class="stat">No Country</td>
                         </tr>
                         <tr class="itemRow">
-                            <td><a href="/admin/categories/edit/${order.id}">
+                            <td><a href="/user/myaccount/details/add-address">
                                 <button class="btn btn-primary btn-block active">Add address</button>
                             </a>
                             </td>
