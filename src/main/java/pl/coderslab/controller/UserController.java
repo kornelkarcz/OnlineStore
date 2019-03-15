@@ -111,10 +111,30 @@ public class UserController {
     }
 
     @GetMapping("/myaccount/details/newpassword")
-    public String newPassword(){
+    public String newPassword() {
         return "user/newpassword";
     }
 
+    @PostMapping("/myaccount/details/newpassword")
+    public String newPassword(@RequestParam("oldPassword") String oldPassword, @RequestParam("newPassword") String newPassword,
+                              @RequestParam("repeatPassword") String repeatPassword, Model model, HttpSession session) {
+
+        User loggedUser = (User) session.getAttribute("logged");
+        if (!BCrypt.checkpw(oldPassword, loggedUser.getPassword())) {
+            model.addAttribute("oldwrong", "Old password doesn't match.");
+            return "user/newpassword";
+        }
+
+        if (!newPassword.equals(repeatPassword)) {
+            model.addAttribute("passnoteq", "Passwords don't match");
+            return "user/newpassword";
+        }
+
+        loggedUser.setPassword(newPassword);
+        userService.registerUser(loggedUser);
+        model.addAttribute("newPassInfo", "Password has been changed.");
+        return "redirect:/user/myaccount/details";
+    }
 
 
 }

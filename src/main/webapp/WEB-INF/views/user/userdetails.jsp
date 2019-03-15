@@ -39,7 +39,7 @@
                     <td class="stat">${userDetails.email}</td>
                 </tr>
                 <tr class="itemRow">
-                    <td><a href="/admin/categories/edit/${order.id}">
+                    <td><a href="/user/myaccount/details/newpassword">
                         <button class="btn btn-primary btn-block active">Change password</button>
                     </a>
                     </td>
