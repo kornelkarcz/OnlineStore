@@ -2,6 +2,7 @@ package pl.coderslab.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+import pl.coderslab.model.AdminAllOrdersQuery;
 import pl.coderslab.model.Order;
 import pl.coderslab.model.OrderDetails;
 import pl.coderslab.model.QueryUserOrders;
@@ -38,5 +39,9 @@ public class OrderService {
 
     public Integer getNumberOfOrders() {
         return orderRepository.getNumberOfOrders();
+    }
+
+    public List<AdminAllOrdersQuery> getAllOrders() {
+        return orderRepository.findAllOrdersForAdmin();
     }
 }

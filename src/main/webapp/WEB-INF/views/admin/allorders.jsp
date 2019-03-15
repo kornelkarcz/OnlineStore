@@ -2,7 +2,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>All products</title>
+    <title>All Orders</title>
     <%@ include file="../dependecies.jsp" %>
 </head>
 <body>
@@ -21,32 +21,26 @@
 <section class="main-container">
     <article class="index-intro">
 
-
-
         <article class="index-table">
             <div class="table-container">
                 <table class="table table-condensed table-hover">
                     <tr class="info">
-                        <th>Id</th>
-                        <th>Name</th>
-                        <th>Category</th>
-                        <th>Manufacturer</th>
-                        <th>Price</th>
-                        <th colspan="2">Actions</th>
+                        <th>Order Id</th>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Total Sum</th>
+                        <th>Order Date</th>
+                        <th colspan="1">Actions</th>
                     </tr>
-                    <c:forEach items="${products}" var="product">
+                    <c:forEach items="${orders}" var="order">
                         <tr class="itemRow">
-                            <td>${product.id}</td>
-                            <td>${product.name}</td>
-                            <td>${product.category.name}</td>
-                            <td>${product.manufacturer}</td>
-                            <td>${product.price}</td>
-                            <td><a href="/admin/products/edit/${product.id}">
-                                <button class="btn btn-primary btn-block active">Edit</button>
-                            </a></td>
-                            <td><a href="/admin/products/delete/${product.id}"
-                                   onclick="return confirm('Are you sure you want to delete this item?')">
-                                <button class="btn btn-primary btn-block active">Delete</button>
+                            <td>${order.id}</td>
+                            <td>${order.firstName}</td>
+                            <td>${order.lastName}</td>
+                            <td>${order.sum}</td>
+                            <td>${order.orderDate}</td>
+                            <td><a href="/admin/orders/details/${order.id}">
+                                <button class="btn btn-primary btn-block active">Details</button>
                             </a></td>
                         </tr>
                     </c:forEach>
@@ -54,19 +48,14 @@
                 </table>
             </div>
             <div id="xd">
-                <a class="btn btn-primary btn-block active" href="/product/add">
-                    Add next product
-                </a>
                 <a class="btn btn-primary btn-block active" href="/admin/panel-control">
                     Back to panel
                 </a>
             </div>
 
         </article>
-
     </article>
 </section>
-
 
 <%@ include file="../footer.jsp" %>
 </body>

@@ -37,10 +37,10 @@
                             <td>${user.firstName}</td>
                             <td>${user.lastName}</td>
                             <td>${user.email}</td>
-                            <td><a href="http://localhost:8080/product/edit/${user.id}">
+                            <td><a href="/admin/users/edit/${user.id}">
                                 <button class="btn btn-primary btn-block active">Edit</button>
                             </a></td>
-                            <td><a href="http://localhost:8080/product/delete/${user.id}"
+                            <td><a href="/admin/users/delete/${user.id}"
                                    onclick="return confirm('Are you sure you want to delete this item?')">
                                 <button class="btn btn-primary btn-block active">Delete</button>
                             </a></td>

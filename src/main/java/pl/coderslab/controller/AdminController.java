@@ -27,6 +27,9 @@ public class AdminController {
     @Autowired
     private ProductService productService;
 
+    @Autowired
+    private CategoryService categoryService;
+
     @GetMapping("/panel-control")
     public String getPanelControl(Model model) {
         model.addAttribute("countUser", userService.getNumberOfUsers());
@@ -46,5 +49,17 @@ public class AdminController {
     public String getAllUsers(Model model) {
         model.addAttribute("users", userService.findAll());
         return "admin/allusers";
+    }
+
+    @GetMapping("categories")
+    public String getAllCategories(Model model) {
+        model.addAttribute("categories", categoryService.findAll());
+        return "admin/allcategories";
+    }
+
+    @GetMapping("orders")
+    public String getAllOrders(Model model) {
+        model.addAttribute("orders", orderService.getAllOrders());
+        return "admin/allorders";
     }
 }

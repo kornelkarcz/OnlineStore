@@ -2,6 +2,7 @@ package pl.coderslab.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
+import pl.coderslab.model.AdminAllOrdersQuery;
 import pl.coderslab.model.Order;
 import pl.coderslab.model.OrderDetails;
 import pl.coderslab.model.QueryUserOrders;
@@ -24,5 +25,9 @@ public interface OrderRepository extends JpaRepository<Order, Long> {
 
     @Query(value = "select COUNT(*) from orders", nativeQuery = true)
     Integer getNumberOfOrders();
+
+    @Query("select new pl.coderslab.model.AdminAllOrdersQuery(o.id, u.firstName, u.lastName, po.sum, o.orderDate)" +
+            "from Order o join o.productInOrders po join o.user u)")
+    List<AdminAllOrdersQuery> findAllOrdersForAdmin();
 
 }

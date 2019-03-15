@@ -2,7 +2,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>All products</title>
+    <title>All categories</title>
     <%@ include file="../dependecies.jsp" %>
 </head>
 <body>
@@ -21,31 +21,22 @@
 <section class="main-container">
     <article class="index-intro">
 
-
-
         <article class="index-table">
             <div class="table-container">
                 <table class="table table-condensed table-hover">
                     <tr class="info">
-                        <th>Id</th>
-                        <th>Name</th>
-                        <th>Category</th>
-                        <th>Manufacturer</th>
-                        <th>Price</th>
+                        <th>Category Id</th>
+                        <th>Category Name</th>
                         <th colspan="2">Actions</th>
                     </tr>
-                    <c:forEach items="${products}" var="product">
+                    <c:forEach items="${categories}" var="category">
                         <tr class="itemRow">
-                            <td>${product.id}</td>
-                            <td>${product.name}</td>
-                            <td>${product.category.name}</td>
-                            <td>${product.manufacturer}</td>
-                            <td>${product.price}</td>
-                            <td><a href="/admin/products/edit/${product.id}">
+                            <td>${category.id}</td>
+                            <td>${category.name}</td>
+                            <td><a href="/admin/categories/edit/${order.id}">
                                 <button class="btn btn-primary btn-block active">Edit</button>
                             </a></td>
-                            <td><a href="/admin/products/delete/${product.id}"
-                                   onclick="return confirm('Are you sure you want to delete this item?')">
+                            <td><a href="/admin/categories/delete/${order.id}">
                                 <button class="btn btn-primary btn-block active">Delete</button>
                             </a></td>
                         </tr>
@@ -54,8 +45,8 @@
                 </table>
             </div>
             <div id="xd">
-                <a class="btn btn-primary btn-block active" href="/product/add">
-                    Add next product
+                <a class="btn btn-primary btn-block active" href="/admin/categories/add">
+                    Add category
                 </a>
                 <a class="btn btn-primary btn-block active" href="/admin/panel-control">
                     Back to panel
@@ -63,7 +54,6 @@
             </div>
 
         </article>
-
     </article>
 </section>
 
