@@ -19,9 +19,10 @@
 <section class="main-container">
     <article class="index-intro">
 
+        <h3 style="text-align: center">User Control Panel</h3>
         <div class="col-sm-2"></div>
         <div class="col-sm-4">
-            <h3>User Panel Control</h3>
+            <h2>User Stats</h2>
             <table class="table table-condensed table-hover">
                 <tr class="itemRow">
                     <td>Number of orders</td>
