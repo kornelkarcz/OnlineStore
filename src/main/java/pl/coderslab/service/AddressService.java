@@ -20,5 +20,9 @@ public class AddressService {
     public Address findById(Long id) {
         return addressRepository.findOne(id);
     }
+
+    public Address getUserAddress(Long id) {
+        return addressRepository.getUserAddress(id);
+    }
 }
 

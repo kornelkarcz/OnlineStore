@@ -68,6 +68,7 @@ public class UserController {
         User sessionUser = (User) session.getAttribute("logged");
         Long id = sessionUser.getId();
         model.addAttribute("userDetails", userService.getUserDetails(id));
+        model.addAttribute("addressDetails", addressService.getUserAddress(id));
         return "user/userdetails";
     }
 
