@@ -19,18 +19,38 @@
 <section class="main-container">
     <article class="index-intro">
 
-        <div class="col-sm-4"></div>
+        <div class="col-sm-2"></div>
+        <div class="col-sm-4">
+            <h3>User Panel Control</h3>
+            <table class="table table-condensed table-hover">
+                <tr class="itemRow">
+                    <td>Number of orders</td>
+                    <td class="stat">${countOrders}</td>
+                </tr>
+                <tr class="itemRow">
+                    <td>Number of payments</td>
+                    <td class="stat">${countPayments}</td>
+                </tr>
+                <tr class="itemRow">
+                    <td>Total sum of payments</td>
+                    <td class="stat">${sumPayments}</td>
+                </tr>
+            </table>
+        </div>
         <div class="col-sm-4">
             <div id="list-example" class="list-group">
                 <a class="list-group-item list-group-item-action" href="#list-item-1">My details</a>
-                <a class="list-group-item list-group-item-action" href="http://localhost:8080/user/myaccount/add-address">Add address</a>
-                <a class="list-group-item list-group-item-action" href="http://localhost:8080/order/allorders">My orders</a>
-                <a class="list-group-item list-group-item-action" href="http://localhost:8080/payment/allpayments">My payments</a>
+                <a class="list-group-item list-group-item-action"
+                   href="http://localhost:8080/user/myaccount/add-address">Add address</a>
+                <a class="list-group-item list-group-item-action" href="http://localhost:8080/order/allorders">My
+                    orders</a>
+                <a class="list-group-item list-group-item-action" href="http://localhost:8080/payment/allpayments">My
+                    payments</a>
             </div>
             <div data-spy="scroll" data-target="#list-example" data-offset="0" class="scrollspy-example">
             </div>
         </div>
-        <div class="col-sm-4"></div>
+        <div class="col-sm-2"></div>
 
     </article>
 </section>

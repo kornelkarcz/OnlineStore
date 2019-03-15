@@ -9,6 +9,8 @@ import pl.coderslab.model.Address;
 import pl.coderslab.model.FakeUser;
 import pl.coderslab.model.User;
 import pl.coderslab.service.AddressService;
+import pl.coderslab.service.OrderService;
+import pl.coderslab.service.PaymentService;
 import pl.coderslab.service.UserService;
 import pl.coderslab.utils.BCrypt;
 
@@ -29,6 +31,12 @@ public class UserController {
     @Autowired
     private AddressService addressService;
 
+    @Autowired
+    private OrderService orderService;
+
+    @Autowired
+    private PaymentService paymentService;
+
     @GetMapping("/register")
     public String registerUser(Model model) {
         model.addAttribute("user", new User());
@@ -46,7 +54,8 @@ public class UserController {
     }
 
     @RequestMapping("/myaccount")
-    public String displayMyAccount() {
+    public String displayMyAccount(Model model) {
+
         return "user/myaccount";
     }
 
