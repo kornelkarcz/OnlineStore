@@ -31,5 +31,10 @@ public interface PaymentRepository extends JpaRepository<Payment, Long> {
             "from Payment p join p.order o join o.productInOrders po join o.user u")
     List<AdminAllPaymentsQuery> getAllPaymentsForAdmin();
 
+    @Query("select count(p.id), u.id from Payment p join p.order o join o.user u where u.id = ?1")
+    Integer getNumberOfPaymentsForUser(Long id);
+
+    @Query("select sum(po.sum), u.id from Order o join o.productInOrders po join o.user u where u.id = ?1")
+    BigDecimal getTotalSumForUser(Long id);
 }
 

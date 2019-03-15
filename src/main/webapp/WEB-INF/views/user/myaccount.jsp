@@ -29,11 +29,11 @@
                 </tr>
                 <tr class="itemRow">
                     <td>Number of payments</td>
-                    <td class="stat">${countPayments}</td>
+                    <td class="stat">${userPaymentNumber}</td>
                 </tr>
                 <tr class="itemRow">
                     <td>Total sum of payments</td>
-                    <td class="stat">${sumPayments}</td>
+                    <td class="stat">${userPaymentSum}</td>
                 </tr>
             </table>
         </div>

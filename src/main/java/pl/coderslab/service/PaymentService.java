@@ -40,4 +40,12 @@ public class PaymentService {
     public List<AdminAllPaymentsQuery> getAllPaymentsForAdmin() {
         return paymentRepository.getAllPaymentsForAdmin();
     }
+
+    public Integer getNumberOfPaymentsForUser(Long id) {
+        return paymentRepository.getNumberOfPaymentsForUser(id);
+    }
+
+    public BigDecimal getTotalSumForUser(Long id) {
+        return paymentRepository.getTotalSumForUser(id);
+    }
 }

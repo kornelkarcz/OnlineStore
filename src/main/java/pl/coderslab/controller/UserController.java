@@ -54,8 +54,11 @@ public class UserController {
     }
 
     @RequestMapping("/myaccount")
-    public String displayMyAccount(Model model) {
-
+    public String displayMyAccount(Model model, HttpSession session) {
+        User sessionUser = (User) session.getAttribute("logged");
+        Long id = sessionUser.getId();
+        model.addAttribute("userPaymentNumber", paymentService.getNumberOfPaymentsForUser(id));
+        model.addAttribute("userPaymentSum", paymentService.getTotalSumForUser(id));
         return "user/myaccount";
     }
 
